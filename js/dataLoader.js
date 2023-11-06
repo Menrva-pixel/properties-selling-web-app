@@ -22,5 +22,5 @@ var xhr = new XMLHttpRequest();
       }
   };
 
-  xhr.open('GET', './data/houses.json', true);
+  xhr.open('GET', '../data/houses.json', true);
   xhr.send();
