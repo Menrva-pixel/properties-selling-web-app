@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "house 1",
+        "location": "Lokasi 1",
+        "price": 200000,
+        "image": "public/images/house/house-1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "house 2",
+        "location": "Lokasi 2",
+        "price": 250000,
+        "image": "public/images/house/house-2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "house 3",
+        "location": "Lokasi 3",
+        "price": 180000,
+        "image": "public/images/house/house-3.jpg"
+    }
+]
