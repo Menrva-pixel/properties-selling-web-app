@@ -1,3 +1,8 @@
+<?php
+session_start();
+include 'include/database.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
