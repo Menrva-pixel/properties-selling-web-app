@@ -13,15 +13,16 @@ include 'include/database.php';
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css"  rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
 <!--------------Navbar------------------------>
-<nav class="bg-white border-gray-200 dark:bg-gray-900">
+<nav class="bg-white sticky top-0 w-full">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="https://flowbite.com/" class="flex items-center">
-          <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+          <img src="public/images/logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-gray-700"></span>
       </a>
       <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
@@ -30,21 +31,21 @@ include 'include/database.php';
           </svg>
       </button>
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800  dark:border-gray-700">
+        <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-700 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-700 md:dark:hover:bg-transparent">Home</a>
+        </li>
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Home</a>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-700 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-700 md:dark:hover:bg-transparent">About</a>
           </li>
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-700 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-700 md:dark:hover:bg-transparent">Services</a>
           </li>
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-700 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-700 md:dark:hover:bg-transparent">Pricing</a>
           </li>
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-          </li>
-          <li>
-            <a href="auth/login.php" class="flex flex-row-reverse items-center py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><svg class="invert" width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.6" d="M15 2H14C11.1716 2 9.75736 2 8.87868 2.87868C8 3.75736 8 5.17157 8 8V16C8 18.8284 8 20.2426 8.87868 21.1213C9.75736 22 11.1716 22 14 22H15C17.8284 22 19.2426 22 20.1213 21.1213C21 20.2426 21 18.8284 21 16V8C21 5.17157 21 3.75736 20.1213 2.87868C19.2426 2 17.8284 2 15 2Z" fill="#1C274C"></path> <path opacity="0.4" d="M8 8C8 6.46249 8 5.34287 8.14114 4.5H8C5.64298 4.5 4.46447 4.5 3.73223 5.23223C3 5.96447 3 7.14298 3 9.5V14.5C3 16.857 3 18.0355 3.73223 18.7678C4.46447 19.5 5.64298 19.5 8 19.5H8.14114C8 18.6571 8 17.5375 8 16V12.75V11.25V8Z" fill="#1C274C"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5303 11.4697C14.8232 11.7626 14.8232 12.2374 14.5303 12.5303L12.5303 14.5303C12.2374 14.8232 11.7626 14.8232 11.4697 14.5303C11.1768 14.2374 11.1768 13.7626 11.4697 13.4697L12.1893 12.75L5 12.75C4.58579 12.75 4.25 12.4142 4.25 12C4.25 11.5858 4.58579 11.25 5 11.25L12.1893 11.25L11.4697 10.5303C11.1768 10.2374 11.1768 9.76256 11.4697 9.46967C11.7626 9.17678 12.2374 9.17678 12.5303 9.46967L14.5303 11.4697Z" fill="#1C274C"></path> </g></svg></a>
+            <a href="auth/login.php" class="flex flex-row-reverse items-center py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-700 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-700 md:dark:hover:bg-transparent"><svg width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.6" d="M15 2H14C11.1716 2 9.75736 2 8.87868 2.87868C8 3.75736 8 5.17157 8 8V16C8 18.8284 8 20.2426 8.87868 21.1213C9.75736 22 11.1716 22 14 22H15C17.8284 22 19.2426 22 20.1213 21.1213C21 20.2426 21 18.8284 21 16V8C21 5.17157 21 3.75736 20.1213 2.87868C19.2426 2 17.8284 2 15 2Z" fill="#1C274C"></path> <path opacity="0.4" d="M8 8C8 6.46249 8 5.34287 8.14114 4.5H8C5.64298 4.5 4.46447 4.5 3.73223 5.23223C3 5.96447 3 7.14298 3 9.5V14.5C3 16.857 3 18.0355 3.73223 18.7678C4.46447 19.5 5.64298 19.5 8 19.5H8.14114C8 18.6571 8 17.5375 8 16V12.75V11.25V8Z" fill="#1C274C"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5303 11.4697C14.8232 11.7626 14.8232 12.2374 14.5303 12.5303L12.5303 14.5303C12.2374 14.8232 11.7626 14.8232 11.4697 14.5303C11.1768 14.2374 11.1768 13.7626 11.4697 13.4697L12.1893 12.75L5 12.75C4.58579 12.75 4.25 12.4142 4.25 12C4.25 11.5858 4.58579 11.25 5 11.25L12.1893 11.25L11.4697 10.5303C11.1768 10.2374 11.1768 9.76256 11.4697 9.46967C11.7626 9.17678 12.2374 9.17678 12.5303 9.46967L14.5303 11.4697Z" fill="#1C274C"></path> </g></svg></a>
           </li>
         </ul>
       </div>
@@ -53,22 +54,18 @@ include 'include/database.php';
   
 
 <!-------JumbroTron-->
-    <section class="bg-white dark:bg-gray-900">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-            <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
-                <span class="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">New</span> <span class="text-sm font-medium">Flowbite is out! See what's new</span> 
-                <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-            </a>
-            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">We invest in the world’s potential</h1>
-            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
-            <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-                <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                    Learn more
+    <section class="bg-[url('public/images/banner.jpg')] bg-no-repeat bg-sticky bg-gray-800/80 bg-blend-overlay max-h-screen py-52 z-10">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 h-screen">
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-gray-200">Kualitas Hidup Mulai dari Rumah</h1>
+            <p class="mb-8 text-lg font-normal text-blue-300/60 lg:text-xl sm:px-16 xl:px-48">Kualitas hidup yang luar biasa dimulai dari rumah yang Anda pilih. Di sinilah Anda akan menemukan kenyamanan, keamanan, dan cinta yang mendalam.</p>
+            <div class="flex flex-row mb-8 lg:mb-16 space-y-0 sm:flex-row justify-center items-center">
+                <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-300 rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    Mulai mencari
                     <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 </a>
-                <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                <a href="#houses" class="inline-flex space-y-0 justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-400 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
                     <svg class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
-                    Watch video
+                    houses
                 </a>  
             </div>
             <div class="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
@@ -107,8 +104,83 @@ include 'include/database.php';
         </div>
     </section>
 
+    <section class="bg-gray-500">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div class="font-light text-gray-200 sm:text-lg">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Temukan Hunian Impian Anda</h2>
+                <p class="mb-4">Kami adalah mitra terpercaya Anda dalam mencari hunian yang sempurna. Dengan pengalaman dalam industri real estate, kami hadir untuk membantu Anda menemukan rumah impian Anda.</p>
+                <p>Kami menawarkan berbagai pilihan properti berkualitas tinggi dan layanan terbaik untuk memenuhi kebutuhan perumahan Anda. Temukan keindahan di setiap rumah yang kami tawarkan.</p>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mt-8">
+                <img class="w-full rounded-lg" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="property 1">
+                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://images.unsplash.com/photo-1620641622320-cca44cddd341?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fHByb3BlcnRpZXN8ZW58MHx8MHx8fDA%3D" alt="property 2">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-extrabold text-gray-800 text-center">Layanan Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                <!-- Service 1 -->
+                <div class="bg-blue-100 p-6 rounded-lg text-center">
+                    <i class="fas fa-home text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-800">Jual Rumah</h3>
+                    <p class="text-gray-600 mt-2">Temukan rumah impian Anda dengan kami.</p>
+                </div>
+    
+                <!-- Service 2 -->
+                <div class="bg-green-100 p-6 rounded-lg text-center">
+                    <i class="fas fa-building text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-800">Jual Apartemen</h3>
+                    <p class="text-gray-600 mt-2">Pilihan apartemen yang nyaman menanti Anda.</p>
+                </div>
+    
+                <!-- Service 3 -->
+                <div class="bg-yellow-100 p-6 rounded-lg text-center">
+                    <i class="fas fa-industry text-4xl text-yellow-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-800">Jual Gudang & Gedung</h3>
+                    <p class="text-gray-600 mt-2">Properti komersial untuk bisnis Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <section>
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-semibold mb-4">List Perumahan</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="houses">
+                <div class="bg-white p-4 shadow-lg rounded">
+                    <h2 class="text-xl font-semibold">Rumah 1</h2>
+                    <p class="text-gray-500">Lokasi 1</p>
+                    <p class="text-green-500 font-bold mt-2">$100,000</p>
+                    <img src="public/images/house/house-1.jpg">
+                </div>
+                <div class="bg-white p-4 shadow-lg rounded">
+                    <h2 class="text-xl font-semibold">Rumah 2</h2>
+                    <p class="text-gray-500">Lokasi 2</p>
+                    <p class="text-green-500 font-bold mt-2">$120,000</p>
+                    <img src="public/images/house/house-2.jpg">
+                </div>
+                <div class="bg-white p-4 shadow-lg rounded">
+                    <h2 class="text-xl font-semibold">Rumah 3</h2>
+                    <p class="text-gray-500">Lokasi 3</p>
+                    <p class="text-green-500 font-bold mt-2">$90,000</p>
+                    <img src="public/images/house/house-3.jpg">
+                </div>
+    
+                <a href="pages/properties.php" class="text-blue-600 hover:underline">Lihat Lebih Banyak</a>
+            </div>
+        </div>
+    </section>
+    
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <script src="js/dataLoader.js"></script>
 </body>
 </html>
