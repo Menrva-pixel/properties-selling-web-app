@@ -5,7 +5,7 @@ session_start();
 <!--------------Navbar------------------------>
 <nav class="bg-white sticky top-0 w-full">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="/" class="flex items-center">
+      <a href="../index.php" class="flex items-center">
           <img src="../public/images/logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-gray-700"></span>
       </a>
