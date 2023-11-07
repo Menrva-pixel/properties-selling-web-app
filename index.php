@@ -22,7 +22,7 @@ session_start();
 <body>
 
     <!--------------Navbar------------------------>
-    <nav class="bg-white sticky top-0 w-full">
+    <nav class="bg-white sticky top-0 w-full z-50">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="https://flowbite.com/" class="flex items-center">
                 <img src="public/images/logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
@@ -50,7 +50,7 @@ session_start();
                             class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-700 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-700 md:dark:hover:bg-transparent">About</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#service"
                             class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-700 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-700 md:dark:hover:bg-transparent">Services</a>
                     </li>
                     <li>
@@ -191,7 +191,7 @@ session_start();
         </div>
     </section>
 
-    <section class="bg-white py-12">
+    <section class="bg-white py-12" id="service">
         <div class="container mx-auto">
             <h2 class="text-3xl font-extrabold text-gray-800 text-center">Layanan Kami</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
