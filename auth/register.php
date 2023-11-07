@@ -1,10 +1,11 @@
 <?php
 session_start();
-if (!isset($_SESSION['log'])) {
+
+if (isset($_SESSION['log'])) {
     header("location: ../index.php");
-} else {
+    exit;
 }
-;
+
 include '../include/database.php';
 
 if (isset($_POST['submit'])) {

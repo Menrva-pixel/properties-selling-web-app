@@ -1,11 +1,10 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['log'])) {
+if (isset($_SESSION['log'])) {
     header("location: ../index.php");
-} else {
+    exit;
 }
-;
 
 include '../include/database.php';
 date_default_timezone_set('Asia/Jakarta');
