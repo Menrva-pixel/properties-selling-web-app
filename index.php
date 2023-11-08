@@ -52,15 +52,7 @@ session_start();
                         d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                 </svg>
             </li>
-            <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Services</a></li>
-            <li class="text-gray-300">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-                </svg>
-            </li>
-            <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Pricing</a></li>
+            <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#pricing">Pricing</a></li>
             <li class="text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
                     viewBox="0 0 24 24">
@@ -108,11 +100,7 @@ session_start();
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                            href="#">Services</a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                            href="#">Pricing</a>
+                            href="#pricing">Pricing</a>
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
@@ -258,96 +246,149 @@ session_start();
         </div>
     </section>
 
-    <section class="bg-white py-12" id="service">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-extrabold text-gray-800 text-center">Layanan Kami</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-                <!-- Service 1 -->
-                <div class="bg-gray-500 p-6 rounded-lg flex justify-center flex-col items-center text-center">
-                    <svg class="invert" width="64px" height="64px" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M12.6139 1.21065C12.2528 0.929784 11.7472 0.929784 11.3861 1.21065L2.38606 8.21065C2.14247 8.4001 2 8.69141 2 9V20C2 21.1046 2.89543 22 4 22H20C21.1046 22 22 21.1046 22 20V9C22 8.69141 21.8575 8.4001 21.6139 8.21065L12.6139 1.21065ZM16 20H20V9.48908L12 3.26686L4 9.48908V20H8V12C8 11.4477 8.44772 11 9 11H15C15.5523 11 16 11.4477 16 12V20ZM10 20V13H14V20H10Z"
-                                fill="#000000"></path>
-                        </g>
-                    </svg>
-                    <i class="fas fa-home text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="text-xl font-semibold text-gray-300">Jual Rumah</h3>
-                    <p class="text-gray-400 mt-2">Temukan rumah impian Anda dengan kami.</p>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="bg-gray-500 p-6 rounded-lg flex justify-center flex-col items-center text-center">
-                    <svg class="invert" fill="#000000" width="64px" height="64px" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path
-                                d="M22,1H10A1,1,0,0,0,9,2V7H2A1,1,0,0,0,1,8V22a1,1,0,0,0,1,1H22a1,1,0,0,0,1-1V2A1,1,0,0,0,22,1ZM3,9H9V21H3ZM21,21H11V3H21ZM19,7H13V5h6Zm0,4H13V9h6Zm0,4H13V13h6Zm0,4H13V17h6ZM5,10H7v2H5Zm0,4H7v2H5Zm0,4H7v2H5Z">
-                            </path>
-                        </g>
-                    </svg>
-                    <i class="fas fa-building text-4xl text-green-600 mb-4"></i>
-                    <h3 class="text-xl font-semibold text-gray-300">Jual Apartemen</h3>
-                    <p class="text-gray-400 mt-2">Pilihan apartemen yang nyaman menanti Anda.</p>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="bg-gray-500 p-6 rounded-lg flex justify-center flex-col items-center text-center">
-                    <svg class="invert" fill="#000000" height="64px" width="64px" version="1.1" id="Layer_1"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 512 512" xml:space="preserve">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <g>
-                                <g>
-                                    <path
-                                        d="M490.667,0H21.333C9.551,0,0,9.551,0,21.333v469.333C0,502.449,9.551,512,21.333,512h85.333h106.667h85.333h106.667 h85.333c11.782,0,21.333-9.551,21.333-21.333V21.333C512,9.551,502.449,0,490.667,0z M128,256h256v42.667H128V256z M384,213.333 H128v-42.667h256V213.333z M234.667,469.333v-42.667h42.667v42.667H234.667z M320,469.333v-64 c0-11.782-9.551-21.333-21.333-21.333h-85.333C201.551,384,192,393.551,192,405.333v64h-64v-128h256v128H320z M469.333,469.333 h-42.667v-320c0-11.782-9.551-21.333-21.333-21.333H106.667c-11.782,0-21.333,9.551-21.333,21.333v320H42.667V42.667h426.667 V469.333z">
-                                    </path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                    <i class="fas fa-industry text-4xl text-yellow-600 mb-4"></i>
-                    <h3 class="text-xl font-semibold text-gray-300">Jual Gudang & Gedung</h3>
-                    <p class="text-gray-400 mt-2">Properti komersial untuk bisnis Anda.</p>
-                </div>
+    <!----- List Perumahan ---->
+    <section class="py-10">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-extrabold text-gray-800 text-center md:my-16">Temukan Hunianmu</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="houses">
+            <div class="bg-white p-4 shadow-lg rounded relative">
+                <h2 class="text-xl font-semibold">Rumah 1</h2>
+                <p class="text-gray-500">Lokasi 1</p>
+                <p class="text-green-500 font-bold mt-2">$100,000</p>
+                <img src="public/images/house/house-1.jpg" class="w-full rounded">
+                <div class="absolute bottom-0 left-0 right-0 bg-blue-100 p-2 text-blue-600 text-xs font-semibold">Tipe A</div>
+                <div class="absolute bottom-0 left-0 bg-green-100 p-2 text-green-600 text-xs font-semibold">3 Kamar</div>
+                <div class="absolute bottom-0 right-0 bg-yellow-100 p-2 text-yellow-600 text-xs font-semibold">200 m²</div>
+            </div>
+            <div class="bg-white p-4 shadow-lg rounded relative">
+                <h2 class="text-xl font-semibold">Rumah 2</h2>
+                <p class="text-gray-500">Lokasi 2</p>
+                <p class="text-green-500 font-bold mt-2">$120,000</p>
+                <img src="public/images/house/house-2.jpg" class="w-full rounded">
+                <div class="absolute bottom-0 left-0 right-0 bg-blue-100 p-2 text-blue-600 text-xs font-semibold">Tipe B</div>
+                <div class="absolute bottom-0 left-0 bg-green-100 p-2 text-green-600 text-xs font-semibold">4 Kamar</div>
+                <div class="absolute bottom-0 right-0 bg-yellow-100 p-2 text-yellow-600 text-xs font-semibold">250 m²</div>
+            </div>
+            <div class="bg-white p-4 shadow-lg rounded relative">
+                <h2 class="text-xl font-semibold">Rumah 3</h2>
+                <p class="text-gray-500">Lokasi 3</p>
+                <p class="text-green-500 font-bold mt-2">$90,000</p>
+                <img src="public/images/house/house-3.jpg" class="w-full rounded">
+                <div class="absolute bottom-0 left-0 right-0 bg-blue-100 p-2 text-blue-600 text-xs font-semibold">Tipe C</div>
+                <div class="absolute bottom-0 left-0 bg-green-100 p-2 text-green-600 text-xs font-semibold">2 Kamar</div>
+                <div class="absolute bottom-0 right-0 bg-yellow-100 p-2 text-yellow-600 text-xs font-semibold">180 m²</div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<a href="pages/properties.php" class="block text-center text-blue-600 hover:underline mt-4 font-semibold">Lihat Lebih Banyak</a>
 
 
 
-
-    <section>
-        <div class="container mx-auto">
-            <h1 class="text-2xl font-semibold mb-4">List Perumahan</h1>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="houses">
-                <div class="bg-white p-4 shadow-lg rounded">
-                    <h2 class="text-xl font-semibold">Rumah 1</h2>
-                    <p class="text-gray-500">Lokasi 1</p>
-                    <p class="text-green-500 font-bold mt-2">$100,000</p>
-                    <img src="public/images/house/house-1.jpg">
+    <!-----Pricing---->
+    <section class="bg-white py-12" id="pricing">
+        <h2 class="text-3xl font-extrabold text-gray-800 text-center">Marketing Hub</h2>
+        <div class="container mx-auto mt-8 p-4 md:p-0">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
+                <div
+                    class="p-4 border border-gray-400 text-center flex flex-col justify-between space-y-10">
+                    <h3 class="text-xl font-semibold flex flex-row items-center justify-center gap-2">
+                        <svg width="18px" height="18px" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1"
+                            xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: none;
+                                            stroke: #020202;
+                                            stroke-miterlimit: 10;
+                                            stroke-width: 2px;
+                                        }
+                                    </style>
+                                </defs>
+                                <polyline class="cls-1" points="6 22.5 4 22.5 4 8.5"></polyline>
+                                <polyline class="cls-1" points="23 10.5 12 1.5 1 10.5"></polyline>
+                                <line class="cls-1" x1="15" y1="22.5" x2="21" y2="22.5"></line>
+                                <line class="cls-1" x1="8" y1="22.5" x2="14" y2="22.5"></line>
+                                <line class="cls-1" x1="15" y1="19.5" x2="21" y2="19.5"></line>
+                                <line class="cls-1" x1="8" y1="19.5" x2="14" y2="19.5"></line>
+                                <line class="cls-1" x1="15" y1="16.5" x2="21" y2="16.5"></line>
+                                <line class="cls-1" x1="15" y1="13.5" x2="21" y2="13.5"></line>
+                            </g>
+                        </svg>
+                        Rumah</h3>
+                    <div>
+                        <p class="text-gray-700 text-xs">Mulai dari</p>
+                        <p class="text-gray-600/90 text-2xl my-2 font-bold">Rp <a
+                                class="text-4xl font-semibold">400</a>jt -<a class="text-4xl font-semibold">700</a>jt
+                        </p>
+                        <p class="text-gray-800/70 text-xs mb-6">*Jakarta Pusat</p>
+                        <p class="text-gray-800/70 text-xs">Discount <a
+                                class="text-lg font-semibold text-red-600">10%</a> untuk pembelian sekarang.</p>
+                        <p class="text-gray-800/70 text-xs">Cicilan <a class="font-semibold text-red-600 text-lg">5
+                            </a><a class="text-gray-600 font-semibold">hingga</a> <a
+                                class="font-semibold text-red-600 text-lg">20</a> tahun.</p>
+                    </div>
+                    <a href="#contact" class="p-4 bg-blue-600 text-white hover:bg-blue-700 w-full rounded-sm">Talk to
+                        Sales</a>
                 </div>
-                <div class="bg-white p-4 shadow-lg rounded">
-                    <h2 class="text-xl font-semibold">Rumah 2</h2>
-                    <p class="text-gray-500">Lokasi 2</p>
-                    <p class="text-green-500 font-bold mt-2">$120,000</p>
-                    <img src="public/images/house/house-2.jpg">
+                <div
+                    class="p-4 border border-gray-400 text-center flex flex-col justify-between space-y-10">
+                    <h3 class="text-xl font-semibold flex flex-row items-center justify-center gap-2">
+                        <svg fill="#000000" width="18px" height="18px" viewBox="-9.22 0 122.88 122.88" id="Layer_1"
+                            data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <title>apartment</title>
+                                <path
+                                    d="M3.55,119.32H0v3.56H92.49v-3.56h-2v-17a1.22,1.22,0,0,0-1.22-1.22H75.54a1.22,1.22,0,0,0-1.22,1.22v17H48.47V95.23a1.63,1.63,0,0,0-1.63-1.62H19.94a1.63,1.63,0,0,0-1.63,1.62v24.09H0V2.6A2.79,2.79,0,0,1,.82.85h0a2.84,2.84,0,0,1,2-.84H63.93a2.82,2.82,0,0,1,2,.84l.13.13a2.83,2.83,0,0,1,.72,1.89V34.57H102a2.39,2.39,0,0,1,1.69.7h0a2.36,2.36,0,0,1,.7,1.68v84.29a1.63,1.63,0,0,1-1.63,1.63H92.49v-3.56H101V38H66.79v81.34H63.23V3.56H3.55V119.32Zm84.54,0H76.76V103.5H88.09v15.82ZM85.45,45h8.81c.07,0,.13.1.13.22v5.71c0,.1-.06.21-.13.21H85.45c-.07,0-.13-.09-.13-.21V45.22c0-.12.06-.22.13-.22Zm0,39.6h8.81c.07,0,.13.1.13.21v5.71c0,.11-.06.22-.13.22H85.45c-.07,0-.13-.1-.13-.22V84.81c0-.11.06-.21.13-.21Zm-14.85,0h8.8c.08,0,.14.1.14.21v5.71c0,.11-.06.22-.14.22H70.6c-.08,0-.14-.1-.14-.22V84.81c0-.11.06-.21.14-.21ZM85.45,71.4h8.81c.07,0,.13.1.13.22v5.71c0,.11-.06.22-.13.22H85.45c-.07,0-.13-.1-.13-.22V71.62c0-.13.06-.22.13-.22Zm0-13.2h8.81c.07,0,.13.1.13.22v5.71c0,.11-.06.22-.13.22H85.45c-.07,0-.13-.1-.13-.22V58.42c0-.12.06-.22.13-.22ZM70.6,45h8.8c.08,0,.14.1.14.22v5.71c0,.1-.06.21-.14.21H70.6c-.08,0-.14-.09-.14-.21V45.22c0-.12.06-.22.14-.22Zm0,26.4h8.8c.08,0,.14.1.14.22v5.71c0,.11-.06.22-.14.22H70.6c-.08,0-.14-.1-.14-.22V71.62c0-.13.06-.22.14-.22Zm0-13.2h8.8c.08,0,.14.1.14.22v5.71c0,.11-.06.22-.14.22H70.6c-.08,0-.14-.1-.14-.22V58.42c0-.12.06-.22.14-.22ZM45.21,119.32H21.57V96.86H45.21v22.46ZM12.13,12.52h9.58a.28.28,0,0,1,.27.27v9.59a.28.28,0,0,1-.27.27H12.13a.28.28,0,0,1-.27-.27V12.79a.28.28,0,0,1,.27-.27Zm32.94,0h9.58a.28.28,0,0,1,.27.27v9.59a.28.28,0,0,1-.27.27H45.07a.28.28,0,0,1-.27-.27V12.79a.28.28,0,0,1,.27-.27Zm-16.47,0h9.58a.28.28,0,0,1,.27.27v9.59a.28.28,0,0,1-.27.27H28.6a.28.28,0,0,1-.27-.27V12.79a.28.28,0,0,1,.27-.27ZM12.13,33.28h9.58a.28.28,0,0,1,.27.27v9.59a.28.28,0,0,1-.27.27H12.13a.28.28,0,0,1-.27-.27V33.55a.28.28,0,0,1,.27-.27Zm32.94,0h9.58a.28.28,0,0,1,.27.27v9.59a.28.28,0,0,1-.27.27H45.07a.28.28,0,0,1-.27-.27V33.55a.28.28,0,0,1,.27-.27Zm-16.47,0h9.58a.28.28,0,0,1,.27.27v9.59a.28.28,0,0,1-.27.27H28.6a.28.28,0,0,1-.27-.27V33.55a.28.28,0,0,1,.27-.27ZM12.13,74.8h9.58a.27.27,0,0,1,.27.27v9.58a.27.27,0,0,1-.27.27H12.13a.27.27,0,0,1-.27-.27V75.07a.27.27,0,0,1,.27-.27Zm32.94,0h9.58a.27.27,0,0,1,.27.27v9.58a.27.27,0,0,1-.27.27H45.07a.27.27,0,0,1-.27-.27V75.07a.27.27,0,0,1,.27-.27Zm-16.47,0h9.58a.27.27,0,0,1,.27.27v9.58a.27.27,0,0,1-.27.27H28.6a.27.27,0,0,1-.27-.27V75.07a.27.27,0,0,1,.27-.27ZM12.13,54h9.58a.27.27,0,0,1,.27.27V63.9a.28.28,0,0,1-.27.27H12.13a.28.28,0,0,1-.27-.27V54.31a.27.27,0,0,1,.27-.27Zm32.94,0h9.58a.27.27,0,0,1,.27.27V63.9a.28.28,0,0,1-.27.27H45.07a.28.28,0,0,1-.27-.27V54.31a.27.27,0,0,1,.27-.27ZM28.6,54h9.58a.27.27,0,0,1,.27.27V63.9a.28.28,0,0,1-.27.27H28.6a.28.28,0,0,1-.27-.27V54.31A.27.27,0,0,1,28.6,54Z">
+                                </path>
+                            </g>
+                        </svg>
+                        Apartemen</h3>
+                    <div>
+                        <p class="text-gray-700 text-xs">Mulai dari</p>
+                        <p class="text-gray-600/90 text-2xl my-2 font-bold">Rp <a
+                                class="text-4xl font-semibold">500</a>jt</p>
+                        <p class="text-gray-800/70 text-xs mb-6">*D.K.I. Jakarta</p>
+                        <p class="text-gray-800/70 text-xs">Discount <a
+                                class="text-lg font-semibold text-red-600">10%</a> untuk pembelian sekarang.</p>
+                        <p class="text-gray-800/70 text-xs">Cicilan <a class="font-semibold text-red-600 text-lg">5
+                            </a><a class="text-gray-600 font-semibold">hingga</a> <a
+                                class="font-semibold text-red-600 text-lg">20</a> tahun.</p>
+                    </div>
+                    <a href="#contact" class="p-4 bg-blue-600 text-white hover:bg-blue-700 w-full rounded-sm">Talk to
+                        Sales</a>
                 </div>
-                <div class="bg-white p-4 shadow-lg rounded">
-                    <h2 class="text-xl font-semibold">Rumah 3</h2>
-                    <p class="text-gray-500">Lokasi 3</p>
-                    <p class="text-green-500 font-bold mt-2">$90,000</p>
-                    <img src="public/images/house/house-3.jpg">
-                </div>
+                <div
+                    class="p-4 border border-gray-400 text-center flex flex-col justify-between space-y-10">
+                    <h3 class="text-xl font-semibold flex flex-row items-center justify-center gap-2">
+                        <svg width="18px" height="18px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5 9.5C5 6.09371 8.00993 3 12 3C15.9901 3 19 6.09371 19 9.5C19 11.6449 17.6877 14.0406 15.9606 16.2611C14.5957 18.016 13.0773 19.5329 12 20.5944C10.9227 19.5329 9.40427 18.016 8.03935 16.2611C6.31229 14.0406 5 11.6449 5 9.5ZM12 1C6.99007 1 3 4.90629 3 9.5C3 12.3551 4.68771 15.2094 6.46065 17.4889C7.99487 19.4615 9.7194 21.1574 10.7973 22.2173C10.9831 22.4001 11.1498 22.564 11.2929 22.7071C11.4804 22.8946 11.7348 23 12 23C12.2652 23 12.5196 22.8946 12.7071 22.7071C12.8502 22.564 13.0169 22.4001 13.2027 22.2174L13.2028 22.2173C14.2806 21.1573 16.0051 19.4615 17.5394 17.4889C19.3123 15.2094 21 12.3551 21 9.5C21 4.90629 17.0099 1 12 1ZM12 12.5C13.3807 12.5 14.5 11.3807 14.5 10C14.5 8.61929 13.3807 7.5 12 7.5C10.6193 7.5 9.5 8.61929 9.5 10C9.5 11.3807 10.6193 12.5 12 12.5Z"
+                                    fill="#000000"></path>
+                            </g>
+                        </svg>
+                        Tanah</h3>
+                    <div>
+                        <p class="text-gray-700 text-xs">Mulai dari</p>
+                        <p class="text-gray-600/90 text-2xl my-2 font-bold">Rp <span
+                                class="text-4xl font-semibold">24</span>jt</p>
+                        <p class="text-gray-800/70 text-xs mb-6">*Harga per meter persegi untuk D.K.I. Jakarta</p>
+                        <p class="text-gray-800/70 text-xs">Harga dapat bervariasi tergantung wilayah</p>
+                        <p class="text-gray-800/70 text-xs">Harga dapat bervariasi tergantung tipe dan fasilitas</p>
+                    </div>
 
-                <a href="pages/properties.php" class="text-blue-600 hover:underline">Lihat Lebih Banyak</a>
+                    <a href="#contact" class="p-4 bg-blue-600 text-white hover:bg-blue-700 w-full rounded-sm">Talk to
+                        Sales</a>
+                </div>
             </div>
         </div>
     </section>
