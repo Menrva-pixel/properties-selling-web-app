@@ -38,3 +38,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+
+  // JavaScript to show/hide the "Kembali ke Atas" button
+  // JavaScript to show/hide the "Kembali ke Atas" button
+  const backButton = document.getElementById("back-to-top");
+
+  window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+          backButton.classList.add("show");
+      } else {
+          backButton.classList.remove("show");
+      }
+  });
+
+  function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+  }

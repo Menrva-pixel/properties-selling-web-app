@@ -10,9 +10,28 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: hsl(0, 0%, 100%);
+    background-color: rgb(250, 249, 249);
     color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
+
+    #back-to-top {
+        position: fixed;
+        bottom: 4rem;
+        right: 4rem;
+        background-color: #007bff;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 50%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+    }
+
+    #back-to-top.show {
+        opacity: 1;
+        visibility: visible;
+    }

@@ -286,12 +286,12 @@ session_start();
 
 
     <!-----Pricing---->
-    <section class="bg-white py-12" id="pricing">
+    <section class="py-12" id="pricing">
         <h2 class="text-3xl font-extrabold text-gray-800 text-center">Marketing Hub</h2>
         <div class="container mx-auto mt-8 p-4 md:p-0">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
                 <div
-                    class="p-4 border border-gray-400 text-center flex flex-col justify-between space-y-10">
+                    class="p-4 bg-white border border-gray-400 text-center flex flex-col justify-between space-y-10">
                     <h3 class="text-xl font-semibold flex flex-row items-center justify-center gap-2">
                         <svg width="18px" height="18px" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1"
                             xmlns="http://www.w3.org/2000/svg" fill="#000000">
@@ -335,7 +335,7 @@ session_start();
                         Sales</a>
                 </div>
                 <div
-                    class="p-4 border border-gray-400 text-center flex flex-col justify-between space-y-10">
+                    class="p-4 bg-white border border-gray-400 text-center flex flex-col justify-between space-y-10">
                     <h3 class="text-xl font-semibold flex flex-row items-center justify-center gap-2">
                         <svg fill="#000000" width="18px" height="18px" viewBox="-9.22 0 122.88 122.88" id="Layer_1"
                             data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
@@ -364,7 +364,7 @@ session_start();
                         Sales</a>
                 </div>
                 <div
-                    class="p-4 border border-gray-400 text-center flex flex-col justify-between space-y-10">
+                    class="p-4 bg-white border border-gray-400 text-center flex flex-col justify-between space-y-10">
                     <h3 class="text-xl font-semibold flex flex-row items-center justify-center gap-2">
                         <svg width="18px" height="18px" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -392,6 +392,10 @@ session_start();
             </div>
         </div>
     </section>
+
+    <button id="back-to-top" class="fixed" onclick="scrollToTop()">
+    <svg width="22px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 6V18M12 6L7 11M12 6L17 11" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+    </button>
 
     <!--footer-->
     <?php
