@@ -1,10 +1,10 @@
 <!-- ====== Footer Section Start -->
-<footer
+<footer>
 <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl ">
   <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
     <div class="sm:col-span-2">
       <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
-        <img src="./public/images/logo.png" alt="logo" class="w-52 mx-auto h-auto">
+        <img src="../public/images/logo.png" alt="logo" class="w-52 mx-auto h-auto">
       </a>
       <div class="mt-6 lg:max-w-sm">
         <p class="text-sm text-gray-800">

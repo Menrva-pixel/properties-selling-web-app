@@ -44,7 +44,7 @@ session_start();
                         d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                 </svg>
             </li>
-            <li><a class="text-sm text-blue-600 font-bold" href="#">About Us</a></li>
+            <li><a class="text-sm text-blue-600 font-bold" href="pages/about.php">About Us</a></li>
             <li class="text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
                     viewBox="0 0 24 24">
@@ -96,7 +96,7 @@ session_start();
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                            href="#">About Us</a>
+                            href="pages/about.php">About Us</a>
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
@@ -251,32 +251,88 @@ session_start();
     <div class="container mx-auto">
         <h2 class="text-3xl font-extrabold text-gray-800 text-center md:my-16">Temukan Hunianmu</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="houses">
-            <div class="bg-white p-4 shadow-lg rounded relative">
-                <h2 class="text-xl font-semibold">Rumah 1</h2>
-                <p class="text-gray-500">Lokasi 1</p>
-                <p class="text-green-500 font-bold mt-2">$100,000</p>
+            <div class="bg-white shadow-lg rounded relative">
                 <img src="public/images/house/house-1.jpg" class="w-full rounded">
-                <div class="absolute bottom-0 left-0 right-0 bg-blue-100 p-2 text-blue-600 text-xs font-semibold">Tipe A</div>
-                <div class="absolute bottom-0 left-0 bg-green-100 p-2 text-green-600 text-xs font-semibold">3 Kamar</div>
-                <div class="absolute bottom-0 right-0 bg-yellow-100 p-2 text-yellow-600 text-xs font-semibold">200 m²</div>
+                <p class="absolute left-2 top-2 p-1 bg-gray-700/70 text-gray-200 text-sm flex items-center gap-1">
+                    <svg class="invert" width="18px" height="18px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5 9.5C5 6.09371 8.00993 3 12 3C15.9901 3 19 6.09371 19 9.5C19 11.6449 17.6877 14.0406 15.9606 16.2611C14.5957 18.016 13.0773 19.5329 12 20.5944C10.9227 19.5329 9.40427 18.016 8.03935 16.2611C6.31229 14.0406 5 11.6449 5 9.5ZM12 1C6.99007 1 3 4.90629 3 9.5C3 12.3551 4.68771 15.2094 6.46065 17.4889C7.99487 19.4615 9.7194 21.1574 10.7973 22.2173C10.9831 22.4001 11.1498 22.564 11.2929 22.7071C11.4804 22.8946 11.7348 23 12 23C12.2652 23 12.5196 22.8946 12.7071 22.7071C12.8502 22.564 13.0169 22.4001 13.2027 22.2174L13.2028 22.2173C14.2806 21.1573 16.0051 19.4615 17.5394 17.4889C19.3123 15.2094 21 12.3551 21 9.5C21 4.90629 17.0099 1 12 1ZM12 12.5C13.3807 12.5 14.5 11.3807 14.5 10C14.5 8.61929 13.3807 7.5 12 7.5C10.6193 7.5 9.5 8.61929 9.5 10C9.5 11.3807 10.6193 12.5 12 12.5Z"
+                                    fill="#000000"></path>
+                            </g>
+                        </svg>Jakarta</p>
+                <div>
+                    <div class="flex items-center justify-between p-4 my-6">
+                        <h2 class="text-2xl font-semibold">Classic American House</h2>
+                        <p class="text-gray-500">Rp 1.5 Milyar</p>
+                    </div>
+                </div>
+                <div>
+                    <ol class="flex flex-row gap-2 ml-4 my-4">
+                        <li><p class="rounded-sm bg-blue-100 p-2 text-blue-600 text-xs font-semibold">Classic</p></li>
+                        <li><p class="rounded-sm bg-green-100 p-2 text-green-600 text-xs font-semibold">3 Kamar</p></li>
+                        <li><p class="rounded-sm bg-yellow-100 p-2 text-yellow-600 text-xs font-semibold">380 m²</p></li>
+                    </ol>
+                </div>
             </div>
-            <div class="bg-white p-4 shadow-lg rounded relative">
-                <h2 class="text-xl font-semibold">Rumah 2</h2>
-                <p class="text-gray-500">Lokasi 2</p>
-                <p class="text-green-500 font-bold mt-2">$120,000</p>
+            
+            <div class="bg-white shadow-lg rounded relative">
                 <img src="public/images/house/house-2.jpg" class="w-full rounded">
-                <div class="absolute bottom-0 left-0 right-0 bg-blue-100 p-2 text-blue-600 text-xs font-semibold">Tipe B</div>
-                <div class="absolute bottom-0 left-0 bg-green-100 p-2 text-green-600 text-xs font-semibold">4 Kamar</div>
-                <div class="absolute bottom-0 right-0 bg-yellow-100 p-2 text-yellow-600 text-xs font-semibold">250 m²</div>
+                <p class="absolute left-2 top-2 p-1 bg-gray-700/70 text-gray-200 text-sm flex items-center gap-1">
+                    <svg class="invert" width="18px" height="18px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5 9.5C5 6.09371 8.00993 3 12 3C15.9901 3 19 6.09371 19 9.5C19 11.6449 17.6877 14.0406 15.9606 16.2611C14.5957 18.016 13.0773 19.5329 12 20.5944C10.9227 19.5329 9.40427 18.016 8.03935 16.2611C6.31229 14.0406 5 11.6449 5 9.5ZM12 1C6.99007 1 3 4.90629 3 9.5C3 12.3551 4.68771 15.2094 6.46065 17.4889C7.99487 19.4615 9.7194 21.1574 10.7973 22.2173C10.9831 22.4001 11.1498 22.564 11.2929 22.7071C11.4804 22.8946 11.7348 23 12 23C12.2652 23 12.5196 22.8946 12.7071 22.7071C12.8502 22.564 13.0169 22.4001 13.2027 22.2174L13.2028 22.2173C14.2806 21.1573 16.0051 19.4615 17.5394 17.4889C19.3123 15.2094 21 12.3551 21 9.5C21 4.90629 17.0099 1 12 1ZM12 12.5C13.3807 12.5 14.5 11.3807 14.5 10C14.5 8.61929 13.3807 7.5 12 7.5C10.6193 7.5 9.5 8.61929 9.5 10C9.5 11.3807 10.6193 12.5 12 12.5Z"
+                                    fill="#000000"></path>
+                            </g>
+                        </svg>Jakarta</p>
+                <div>
+                    <div class="flex items-center justify-between p-4 my-6">
+                        <h2 class="text-2xl font-semibold">Classic American House</h2>
+                        <p class="text-gray-500">Rp 1.5 Milyar</p>
+                    </div>
+                </div>
+                <div>
+                    <ol class="flex flex-row gap-2 ml-4 my-4">
+                        <li><p class="rounded-sm bg-blue-100 p-2 text-blue-600 text-xs font-semibold">Classic</p></li>
+                        <li><p class="rounded-sm bg-green-100 p-2 text-green-600 text-xs font-semibold">3 Kamar</p></li>
+                        <li><p class="rounded-sm bg-yellow-100 p-2 text-yellow-600 text-xs font-semibold">380 m²</p></li>
+                    </ol>
+                </div>
             </div>
-            <div class="bg-white p-4 shadow-lg rounded relative">
-                <h2 class="text-xl font-semibold">Rumah 3</h2>
-                <p class="text-gray-500">Lokasi 3</p>
-                <p class="text-green-500 font-bold mt-2">$90,000</p>
+
+            <div class="bg-white shadow-lg rounded relative">
                 <img src="public/images/house/house-3.jpg" class="w-full rounded">
-                <div class="absolute bottom-0 left-0 right-0 bg-blue-100 p-2 text-blue-600 text-xs font-semibold">Tipe C</div>
-                <div class="absolute bottom-0 left-0 bg-green-100 p-2 text-green-600 text-xs font-semibold">2 Kamar</div>
-                <div class="absolute bottom-0 right-0 bg-yellow-100 p-2 text-yellow-600 text-xs font-semibold">180 m²</div>
+                <p class="absolute left-2 top-2 p-1 bg-gray-700/70 text-gray-200 text-sm flex items-center gap-1">
+                    <svg class="invert" width="18px" height="18px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5 9.5C5 6.09371 8.00993 3 12 3C15.9901 3 19 6.09371 19 9.5C19 11.6449 17.6877 14.0406 15.9606 16.2611C14.5957 18.016 13.0773 19.5329 12 20.5944C10.9227 19.5329 9.40427 18.016 8.03935 16.2611C6.31229 14.0406 5 11.6449 5 9.5ZM12 1C6.99007 1 3 4.90629 3 9.5C3 12.3551 4.68771 15.2094 6.46065 17.4889C7.99487 19.4615 9.7194 21.1574 10.7973 22.2173C10.9831 22.4001 11.1498 22.564 11.2929 22.7071C11.4804 22.8946 11.7348 23 12 23C12.2652 23 12.5196 22.8946 12.7071 22.7071C12.8502 22.564 13.0169 22.4001 13.2027 22.2174L13.2028 22.2173C14.2806 21.1573 16.0051 19.4615 17.5394 17.4889C19.3123 15.2094 21 12.3551 21 9.5C21 4.90629 17.0099 1 12 1ZM12 12.5C13.3807 12.5 14.5 11.3807 14.5 10C14.5 8.61929 13.3807 7.5 12 7.5C10.6193 7.5 9.5 8.61929 9.5 10C9.5 11.3807 10.6193 12.5 12 12.5Z"
+                                    fill="#000000"></path>
+                            </g>
+                        </svg>Jakarta</p>
+                <div>
+                    <div class="flex items-center justify-between p-4 my-6">
+                        <h2 class="text-2xl font-semibold">Classic American House</h2>
+                        <p class="text-gray-500">Rp 1.5 Milyar</p>
+                    </div>
+                </div>
+                <div>
+                    <ol class="flex flex-row gap-2 ml-4 my-4">
+                        <li><p class="rounded-sm bg-blue-100 p-2 text-blue-600 text-xs font-semibold">Classic</p></li>
+                        <li><p class="rounded-sm bg-green-100 p-2 text-green-600 text-xs font-semibold">3 Kamar</p></li>
+                        <li><p class="rounded-sm bg-yellow-100 p-2 text-yellow-600 text-xs font-semibold">380 m²</p></li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
@@ -397,10 +453,90 @@ session_start();
     <svg width="22px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 6V18M12 6L7 11M12 6L17 11" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
     </button>
 
-    <!--footer-->
-    <?php
-        include 'include/footer.php';
-    ?>
+<!-- ====== Footer Section Start -->
+<footer>
+<div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl ">
+  <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="sm:col-span-2">
+      <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
+        <img src="public/images/logo.png" alt="logo" class="w-52 mx-auto h-auto">
+      </a>
+      <div class="mt-6 lg:max-w-sm">
+        <p class="text-sm text-gray-800">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+        </p>
+        <p class="mt-4 text-sm text-gray-800">
+          Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        </p>
+      </div>
+    </div>
+    <div class="space-y-2 text-sm">
+      <p class="text-base font-bold tracking-wide text-gray-900">Contacts</p>
+      <div class="flex">
+        <p class="mr-1 text-gray-800">Phone:</p>
+        <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">850-123-5021</a>
+      </div>
+      <div class="flex">
+        <p class="mr-1 text-gray-800">Email:</p>
+        <a href="mailto:info@lorem.mail" aria-label="Our email" title="Our email" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">info@lorem.mail</a>
+      </div>
+      <div class="flex">
+        <p class="mr-1 text-gray-800">Address:</p>
+        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Our address" title="Our address" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
+          312 Lovely Street, NY
+        </a>
+      </div>
+    </div>
+    <div>
+      <span class="text-base font-bold tracking-wide text-gray-900">Social</span>
+      <div class="flex items-center mt-1 space-x-3">
+        <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+            <path
+              d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
+            ></path>
+          </svg>
+        </a>
+        <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+          <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
+            <circle cx="15" cy="15" r="4"></circle>
+            <path
+              d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z"
+            ></path>
+          </svg>
+        </a>
+        <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+            <path
+              d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+      <p class="mt-4 text-sm text-gray-500">
+        Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.
+      </p>
+    </div>
+  </div>
+  <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row ">
+    <p class="text-sm text-gray-600">
+      © Copyright 2020 Dream Dwelling. All rights reserved.
+    </p>
+    <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+      <li>
+        <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">F.A.Q</a>
+      </li>
+      <li>
+        <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy Policy</a>
+      </li>
+      <li>
+        <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Terms &amp; Conditions</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</footer>
+<!-- ====== Footer Section End -->
 
 
 
