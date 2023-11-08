@@ -16,9 +16,19 @@
     include '../include/navbar.php';
     ?>
 
+    <div class="relative w-1/2 mx-auto text-gray-600 focus-within:text-gray-400">
+        <input type="text" class="py-2 px-4 w-full rounded-lg focus:outline-none focus:shadow-md" placeholder="Cari properti...">
+        <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+            <button type="submit" class="p-1 focus:outline-none focus:shadow-md">
+               
+            </button>
+        </span>
+    </div>
+
+
     <section>
         <div class="container mx-auto">
-            <h1 class="text-2xl font-semibold mb-4">List Perumahan</h1>
+            <h1 class="text-2xl font-semibold mb-4 text-center my-6">Available Homes for Sale</h1>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="houses-container">         
             </div>
         </div>

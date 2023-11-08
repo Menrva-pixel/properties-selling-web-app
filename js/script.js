@@ -39,8 +39,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+var searchInput = document.getElementById('search-input');
+var searchButton = document.getElementById('search-button');
 
-  // JavaScript to show/hide the "Kembali ke Atas" button
+searchButton.addEventListener('click', function() {
+    var searchQuery = searchInput.value;
+});
+
   // JavaScript to show/hide the "Kembali ke Atas" button
   const backButton = document.getElementById("back-to-top");
 

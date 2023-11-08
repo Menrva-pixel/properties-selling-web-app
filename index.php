@@ -378,7 +378,7 @@ session_start();
                     <div>
                         <p class="text-gray-700 text-xs">Mulai dari</p>
                         <p class="text-gray-600/90 text-2xl my-2 font-bold">Rp <a
-                                class="text-4xl font-semibold">400</a>jt -<a class="text-4xl font-semibold">700</a>jt
+                                class="text-4xl font-semibold">400</a>jt
                         </p>
                         <p class="text-gray-800/70 text-xs mb-6">*Jakarta Pusat</p>
                         <p class="text-gray-800/70 text-xs">Discount <a

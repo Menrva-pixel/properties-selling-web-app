@@ -1,32 +1,102 @@
 [
     {
         "id": 1,
-        "name": "Rumah 1",
-        "location": "Lokasi 1",
-        "price": 200000,
+        "name": "Minimalis Modern Residence",
+        "location": "Jakarta Selatan",
+        "price": 250000,
         "image": "../public/images/house/house-1.jpg",
-        "type": "Rumah",
+        "type": "Rumah Minimalis",
         "bedrooms": 3,
-        "land_size": "200 m²"
+        "landSize": "180"
     },
     {
         "id": 2,
-        "name": "Rumah 2",
-        "location": "Lokasi 2",
-        "price": 250000,
+        "name": "Elegance Villa",
+        "location": "Depok",
+        "price": 320000,
         "image": "../public/images/house/house-2.jpg",
-        "type": "Rumah",
+        "type": "Villa",
         "bedrooms": 4,
-        "land_size": "250 m²"
+        "landSize": "220"
     },
     {
         "id": 3,
-        "name": "Rumah 3",
-        "location": "Lokasi 3",
-        "price": 180000,
+        "name": "Modern Townhouse",
+        "location": "Tangerang",
+        "price": 270000,
         "image": "../public/images/house/house-3.jpg",
-        "type": "Rumah",
+        "type": "Townhouse",
+        "bedrooms": 3,
+        "landSize": "160"
+    },
+    {
+        "id": 4,
+        "name": "Contemporary Bungalow",
+        "location": "Bandung",
+        "price": 300000,
+        "image": "../public/images/house/house-4.jpg",
+        "type": "Bungalow",
+        "bedrooms": 4,
+        "landSize": "240"
+    },
+    {
+        "id": 5,
+        "name": "Luxury Penthouse",
+        "location": "Jakarta Pusat",
+        "price": 400000,
+        "image": "../public/images/house/house-5.jpg",
+        "type": "Penthouse",
+        "bedrooms": 5,
+        "landSize": "350"
+    },
+    {
+        "id": 6,
+        "name": "Sleek Condo",
+        "location": "Jakarta Timur",
+        "price": 280000,
+        "image": "../public/images/house/house-6.jpg",
+        "type": "Condo",
+        "bedrooms": 3,
+        "landSize": "170"
+    },
+    {
+        "id": 7,
+        "name": "Charming Cottage",
+        "location": "Cibodas",
+        "price": 220000,
+        "image": "../public/images/house/house-7.jpg",
+        "type": "Cottage",
+        "bedrooms": 3,
+        "landSize": "190"
+    },
+    {
+        "id": 8,
+        "name": "Modern Farmhouse",
+        "location": "Bekasi",
+        "price": 350000,
+        "image": "../public/images/house/house-8.jpg",
+        "type": "Farmhouse",
+        "bedrooms": 4,
+        "landSize": "230"
+    },
+    {
+        "id": 9,
+        "name": "Urban Loft",
+        "location": "Tangerang",
+        "price": 290000,
+        "image": "../public/images/house/house-9.jpg",
+        "type": "Loft",
+        "bedrooms": 3,
+        "landSize": "180"
+    },
+    {
+        "id": 10,
+        "name": "Sleek Apartment",
+        "location": "Jakarta Barat",
+        "price": 260000,
+        "image": "../public/images/house/house-10.jpg",
+        "type": "Apartment",
         "bedrooms": 2,
-        "land_size": "180 m²"
+        "landSize": "120"
     }
 ]
