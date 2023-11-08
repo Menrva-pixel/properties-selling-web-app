@@ -63,14 +63,14 @@ session_start();
             <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Contact</a></li>
         </ul>
         <?php
-    if (isset($_SESSION['log'])) {
-        echo '<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="#">' . $_SESSION['name'] . '</a>';
-        echo '<a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="auth/logout.php">Logout</a>';
-    } else {
-        echo '<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="auth/login.php">Sign In</a>';
-        echo '<a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="#">Sign up</a>';
-    }
-?>
+        if (isset($_SESSION['log'])) {
+            echo '<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="#">' . $_SESSION['name'] . '</a>';
+            echo '<a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="auth/logout.php">Logout</a>';
+        } else {
+            echo '<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="auth/login.php">Sign In</a>';
+            echo '<a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="auth/register.php">Sign up</a>';
+        }
+        ?>
     </nav>
     <div class="navbar-menu relative z-50 hidden">
         <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
@@ -111,14 +111,14 @@ session_start();
             <div class="mt-auto">
                 <div class="pt-6">
                     <?php
-                if (isset($_SESSION['log'])) {
-                    echo '<a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">' . $_SESSION['name'] . '</a>';
-                    echo '<a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="auth/logout.php">Logout</a>';
-                } else {
-                    echo '<a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="auth/login.php">Sign in</a>';
-                    echo '<a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="#">Sign Up</a>';
-                }
-                ?>
+                    if (isset($_SESSION['log'])) {
+                        echo '<a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">' . $_SESSION['name'] . '</a>';
+                        echo '<a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="auth/logout.php">Logout</a>';
+                    } else {
+                        echo '<a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="auth/login.php">Sign in</a>';
+                        echo '<a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="auth/register.php">Sign Up</a>';
+                    }
+                    ?>
                 </div>
 
                 <p class="my-4 text-xs text-center text-gray-400">
