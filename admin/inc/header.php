@@ -11,4 +11,4 @@
 
 <body>
     <?php include('inc/sidebar.php') ?>
-    <main>
+    <main class="">
