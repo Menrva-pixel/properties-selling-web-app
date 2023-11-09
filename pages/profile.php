@@ -7,6 +7,16 @@
     <title>Profile Page</title>
 </head>
 <body>
-    <h1>user</h1>
+    <?php
+        include '../include/navbar.php';
+    ?>
+
+
+
+
+
+    <?php 
+        include '../include/footer.php';
+    ?>
 </body>
 </html>

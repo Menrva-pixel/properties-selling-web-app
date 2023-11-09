@@ -387,7 +387,7 @@ session_start();
                             </a><a class="text-gray-600 font-semibold">hingga</a> <a
                                 class="font-semibold text-red-600 text-lg">20</a> tahun.</p>
                     </div>
-                    <a href="#contact" class="p-4 bg-blue-600 text-white hover:bg-blue-700 w-full rounded-sm">Talk to
+                    <a href="pages/pricing.php" class="p-4 bg-blue-600 text-white hover:bg-blue-700 w-full rounded-sm">Talk to
                         Sales</a>
                 </div>
                 <div
@@ -416,7 +416,7 @@ session_start();
                             </a><a class="text-gray-600 font-semibold">hingga</a> <a
                                 class="font-semibold text-red-600 text-lg">20</a> tahun.</p>
                     </div>
-                    <a href="#contact" class="p-4 bg-blue-600 text-white hover:bg-blue-700 w-full rounded-sm">Talk to
+                    <a href="pages/pricing.php" class="p-4 bg-blue-600 text-white hover:bg-blue-700 w-full rounded-sm">Talk to
                         Sales</a>
                 </div>
                 <div
@@ -442,7 +442,7 @@ session_start();
                         <p class="text-gray-800/70 text-xs">Harga dapat bervariasi tergantung tipe dan fasilitas</p>
                     </div>
 
-                    <a href="#contact" class="p-4 bg-blue-600 text-white hover:bg-blue-700 w-full rounded-sm">Talk to
+                    <a href="pages/pricing.php" class="p-4 bg-blue-600 text-white hover:bg-blue-700 w-full rounded-sm">Talk to
                         Sales</a>
                 </div>
             </div>
