@@ -265,17 +265,21 @@ session_start();
                             </g>
                         </svg>Jakarta</p>
                 <div>
-                    <div class="flex items-center justify-between p-4 my-6">
-                        <h2 class="text-2xl font-semibold">Classic American House</h2>
-                        <p class="text-gray-500">Rp 1.5 Milyar</p>
+                <div class="flex flex-col items-start justify-between p-4 my-6">
+                        <h2 class="text-2xl font-semibold">Minimalist Modern Residence</h2>
+                        <p class="text-gray-500 text-sm my-2">Jl. Bunga Indah No. 123, Perumahan Citra Damai, Kota Bahagia</p>
                     </div>
                 </div>
-                <div>
+                <div class="flex flex-row justify-between">
                     <ol class="flex flex-row gap-2 ml-4 my-4">
                         <li><p class="rounded-sm bg-blue-100 p-2 text-blue-600 text-xs font-semibold">Classic</p></li>
                         <li><p class="rounded-sm bg-green-100 p-2 text-green-600 text-xs font-semibold">3 Kamar</p></li>
-                        <li><p class="rounded-sm bg-yellow-100 p-2 text-yellow-600 text-xs font-semibold">380 m²</p></li>
+                        <li><p class="rounded-sm bg-yellow-100 p-2 text-yellow-600 text-xs font-semibold">180 m²</p></li>
                     </ol>
+                    <button class="m-2 hover:-translate-y-1 duration-300 ">
+                        <a href="javascript:void(0);" class="flex gap-1 items-center bg-gray-200/70 p-2 rounded-sm text-xs md:text-sm text-gray-600 border border-gray-400/60"><svg width="14px" height="14px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21.25C11.853 21.2514 11.7093 21.2059 11.59 21.12C11.29 20.93 4.25 16.2 4.25 10.45C4.25 8.39452 5.06652 6.42328 6.51992 4.96987C7.97333 3.51647 9.94457 2.69995 12 2.69995C14.0554 2.69995 16.0267 3.51647 17.4801 4.96987C18.9335 6.42328 19.75 8.39452 19.75 10.45C19.75 16.2 12.75 20.93 12.41 21.12C12.2907 21.2059 12.147 21.2514 12 21.25ZM12 4.24995C10.3494 4.24463 8.7642 4.89454 7.59238 6.05699C6.42056 7.21943 5.75794 8.79939 5.75 10.45C5.75 14.66 10.54 18.51 12 19.58C13.46 18.51 18.25 14.66 18.25 10.45C18.2421 8.79939 17.5794 7.21943 16.4076 6.05699C15.2358 4.89454 13.6506 4.24463 12 4.24995Z" fill="#000000"></path> <path d="M12 12.75C11.4561 12.75 10.9244 12.5887 10.4722 12.2865C10.0199 11.9844 9.66747 11.5549 9.45933 11.0524C9.25119 10.5499 9.19673 9.99695 9.30284 9.4635C9.40895 8.93006 9.67086 8.44005 10.0555 8.05546C10.4401 7.67086 10.9301 7.40895 11.4635 7.30284C11.997 7.19673 12.5499 7.25119 13.0524 7.45933C13.5549 7.66747 13.9844 8.01995 14.2865 8.47218C14.5887 8.92442 14.75 9.4561 14.75 10C14.75 10.7293 14.4603 11.4288 13.9445 11.9445C13.4288 12.4603 12.7293 12.75 12 12.75ZM12 8.75C11.7528 8.75 11.5111 8.82331 11.3055 8.96066C11.1 9.09802 10.9398 9.29324 10.8452 9.52165C10.7505 9.75005 10.7258 10.0014 10.774 10.2439C10.8223 10.4863 10.9413 10.7091 11.1161 10.8839C11.2909 11.0587 11.5137 11.1778 11.7561 11.226C11.9986 11.2742 12.2499 11.2495 12.4784 11.1549C12.7068 11.0602 12.902 10.9 13.0393 10.6945C13.1767 10.4889 13.25 10.2472 13.25 10C13.25 9.66848 13.1183 9.35054 12.8839 9.11612C12.6495 8.8817 12.3315 8.75 12 8.75Z" fill="#000000"></path> </g></svg>
+                        Map</a>
+                    </button>
                 </div>
             </div>
             
@@ -291,19 +295,23 @@ session_start();
                                     d="M5 9.5C5 6.09371 8.00993 3 12 3C15.9901 3 19 6.09371 19 9.5C19 11.6449 17.6877 14.0406 15.9606 16.2611C14.5957 18.016 13.0773 19.5329 12 20.5944C10.9227 19.5329 9.40427 18.016 8.03935 16.2611C6.31229 14.0406 5 11.6449 5 9.5ZM12 1C6.99007 1 3 4.90629 3 9.5C3 12.3551 4.68771 15.2094 6.46065 17.4889C7.99487 19.4615 9.7194 21.1574 10.7973 22.2173C10.9831 22.4001 11.1498 22.564 11.2929 22.7071C11.4804 22.8946 11.7348 23 12 23C12.2652 23 12.5196 22.8946 12.7071 22.7071C12.8502 22.564 13.0169 22.4001 13.2027 22.2174L13.2028 22.2173C14.2806 21.1573 16.0051 19.4615 17.5394 17.4889C19.3123 15.2094 21 12.3551 21 9.5C21 4.90629 17.0099 1 12 1ZM12 12.5C13.3807 12.5 14.5 11.3807 14.5 10C14.5 8.61929 13.3807 7.5 12 7.5C10.6193 7.5 9.5 8.61929 9.5 10C9.5 11.3807 10.6193 12.5 12 12.5Z"
                                     fill="#000000"></path>
                             </g>
-                        </svg>Jakarta</p>
+                        </svg>Tanggerang</p>
                 <div>
-                    <div class="flex items-center justify-between p-4 my-6">
-                        <h2 class="text-2xl font-semibold">Classic American House</h2>
-                        <p class="text-gray-500">Rp 1.5 Milyar</p>
+                    <div class="flex flex-col items-start justify-between p-4 my-6">
+                        <h2 class="text-2xl font-semibold">Elegance Villa</h2>
+                        <p class="text-gray-500 text-sm my-2">Cluster Mawar Blok C-45, Perumahan Harmoni Asri, Megacity</p>
                     </div>
                 </div>
-                <div>
+                <div class="flex flex-row justify-between">
                     <ol class="flex flex-row gap-2 ml-4 my-4">
                         <li><p class="rounded-sm bg-blue-100 p-2 text-blue-600 text-xs font-semibold">Classic</p></li>
-                        <li><p class="rounded-sm bg-green-100 p-2 text-green-600 text-xs font-semibold">3 Kamar</p></li>
-                        <li><p class="rounded-sm bg-yellow-100 p-2 text-yellow-600 text-xs font-semibold">380 m²</p></li>
+                        <li><p class="rounded-sm bg-green-100 p-2 text-green-600 text-xs font-semibold">4 Kamar</p></li>
+                        <li><p class="rounded-sm bg-yellow-100 p-2 text-yellow-600 text-xs font-semibold">220 m²</p></li>
                     </ol>
+                    <button class="m-2 hover:-translate-y-1 duration-300 ">
+                        <a href="javascript:void(0);" class="flex gap-1 items-center bg-gray-200/70 p-2 rounded-sm text-xs md:text-sm text-gray-600 border border-gray-400/60"><svg width="14px" height="14px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21.25C11.853 21.2514 11.7093 21.2059 11.59 21.12C11.29 20.93 4.25 16.2 4.25 10.45C4.25 8.39452 5.06652 6.42328 6.51992 4.96987C7.97333 3.51647 9.94457 2.69995 12 2.69995C14.0554 2.69995 16.0267 3.51647 17.4801 4.96987C18.9335 6.42328 19.75 8.39452 19.75 10.45C19.75 16.2 12.75 20.93 12.41 21.12C12.2907 21.2059 12.147 21.2514 12 21.25ZM12 4.24995C10.3494 4.24463 8.7642 4.89454 7.59238 6.05699C6.42056 7.21943 5.75794 8.79939 5.75 10.45C5.75 14.66 10.54 18.51 12 19.58C13.46 18.51 18.25 14.66 18.25 10.45C18.2421 8.79939 17.5794 7.21943 16.4076 6.05699C15.2358 4.89454 13.6506 4.24463 12 4.24995Z" fill="#000000"></path> <path d="M12 12.75C11.4561 12.75 10.9244 12.5887 10.4722 12.2865C10.0199 11.9844 9.66747 11.5549 9.45933 11.0524C9.25119 10.5499 9.19673 9.99695 9.30284 9.4635C9.40895 8.93006 9.67086 8.44005 10.0555 8.05546C10.4401 7.67086 10.9301 7.40895 11.4635 7.30284C11.997 7.19673 12.5499 7.25119 13.0524 7.45933C13.5549 7.66747 13.9844 8.01995 14.2865 8.47218C14.5887 8.92442 14.75 9.4561 14.75 10C14.75 10.7293 14.4603 11.4288 13.9445 11.9445C13.4288 12.4603 12.7293 12.75 12 12.75ZM12 8.75C11.7528 8.75 11.5111 8.82331 11.3055 8.96066C11.1 9.09802 10.9398 9.29324 10.8452 9.52165C10.7505 9.75005 10.7258 10.0014 10.774 10.2439C10.8223 10.4863 10.9413 10.7091 11.1161 10.8839C11.2909 11.0587 11.5137 11.1778 11.7561 11.226C11.9986 11.2742 12.2499 11.2495 12.4784 11.1549C12.7068 11.0602 12.902 10.9 13.0393 10.6945C13.1767 10.4889 13.25 10.2472 13.25 10C13.25 9.66848 13.1183 9.35054 12.8839 9.11612C12.6495 8.8817 12.3315 8.75 12 8.75Z" fill="#000000"></path> </g></svg>
+                        Map</a>
+                    </button>
                 </div>
             </div>
 
@@ -319,19 +327,23 @@ session_start();
                                     d="M5 9.5C5 6.09371 8.00993 3 12 3C15.9901 3 19 6.09371 19 9.5C19 11.6449 17.6877 14.0406 15.9606 16.2611C14.5957 18.016 13.0773 19.5329 12 20.5944C10.9227 19.5329 9.40427 18.016 8.03935 16.2611C6.31229 14.0406 5 11.6449 5 9.5ZM12 1C6.99007 1 3 4.90629 3 9.5C3 12.3551 4.68771 15.2094 6.46065 17.4889C7.99487 19.4615 9.7194 21.1574 10.7973 22.2173C10.9831 22.4001 11.1498 22.564 11.2929 22.7071C11.4804 22.8946 11.7348 23 12 23C12.2652 23 12.5196 22.8946 12.7071 22.7071C12.8502 22.564 13.0169 22.4001 13.2027 22.2174L13.2028 22.2173C14.2806 21.1573 16.0051 19.4615 17.5394 17.4889C19.3123 15.2094 21 12.3551 21 9.5C21 4.90629 17.0099 1 12 1ZM12 12.5C13.3807 12.5 14.5 11.3807 14.5 10C14.5 8.61929 13.3807 7.5 12 7.5C10.6193 7.5 9.5 8.61929 9.5 10C9.5 11.3807 10.6193 12.5 12 12.5Z"
                                     fill="#000000"></path>
                             </g>
-                        </svg>Jakarta</p>
+                        </svg>Kab. Bogor</p>
                 <div>
-                    <div class="flex items-center justify-between p-4 my-6">
-                        <h2 class="text-2xl font-semibold">Classic American House</h2>
-                        <p class="text-gray-500">Rp 1.5 Milyar</p>
+                <div class="flex flex-col items-start justify-between p-4 my-6">
+                        <h2 class="text-2xl font-semibold">Modern Townhouse</h2>
+                        <p class="text-gray-500 text-sm my-2">Jl. Anggrek Sari No. 567, Perumahan Sejahtera, Sentul City</p>
                     </div>
                 </div>
-                <div>
+                <div class="flex flex-row justify-between">
                     <ol class="flex flex-row gap-2 ml-4 my-4">
                         <li><p class="rounded-sm bg-blue-100 p-2 text-blue-600 text-xs font-semibold">Classic</p></li>
                         <li><p class="rounded-sm bg-green-100 p-2 text-green-600 text-xs font-semibold">3 Kamar</p></li>
-                        <li><p class="rounded-sm bg-yellow-100 p-2 text-yellow-600 text-xs font-semibold">380 m²</p></li>
+                        <li><p class="rounded-sm bg-yellow-100 p-2 text-yellow-600 text-xs font-semibold">160 m²</p></li>
                     </ol>
+                    <button class="m-2 hover:-translate-y-1 duration-300 ">
+                        <a href="javascript:void(0);" class="flex gap-1 items-center bg-gray-200/70 p-2 rounded-sm text-xs md:text-sm text-gray-600 border border-gray-400/60"><svg width="14px" height="14px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21.25C11.853 21.2514 11.7093 21.2059 11.59 21.12C11.29 20.93 4.25 16.2 4.25 10.45C4.25 8.39452 5.06652 6.42328 6.51992 4.96987C7.97333 3.51647 9.94457 2.69995 12 2.69995C14.0554 2.69995 16.0267 3.51647 17.4801 4.96987C18.9335 6.42328 19.75 8.39452 19.75 10.45C19.75 16.2 12.75 20.93 12.41 21.12C12.2907 21.2059 12.147 21.2514 12 21.25ZM12 4.24995C10.3494 4.24463 8.7642 4.89454 7.59238 6.05699C6.42056 7.21943 5.75794 8.79939 5.75 10.45C5.75 14.66 10.54 18.51 12 19.58C13.46 18.51 18.25 14.66 18.25 10.45C18.2421 8.79939 17.5794 7.21943 16.4076 6.05699C15.2358 4.89454 13.6506 4.24463 12 4.24995Z" fill="#000000"></path> <path d="M12 12.75C11.4561 12.75 10.9244 12.5887 10.4722 12.2865C10.0199 11.9844 9.66747 11.5549 9.45933 11.0524C9.25119 10.5499 9.19673 9.99695 9.30284 9.4635C9.40895 8.93006 9.67086 8.44005 10.0555 8.05546C10.4401 7.67086 10.9301 7.40895 11.4635 7.30284C11.997 7.19673 12.5499 7.25119 13.0524 7.45933C13.5549 7.66747 13.9844 8.01995 14.2865 8.47218C14.5887 8.92442 14.75 9.4561 14.75 10C14.75 10.7293 14.4603 11.4288 13.9445 11.9445C13.4288 12.4603 12.7293 12.75 12 12.75ZM12 8.75C11.7528 8.75 11.5111 8.82331 11.3055 8.96066C11.1 9.09802 10.9398 9.29324 10.8452 9.52165C10.7505 9.75005 10.7258 10.0014 10.774 10.2439C10.8223 10.4863 10.9413 10.7091 11.1161 10.8839C11.2909 11.0587 11.5137 11.1778 11.7561 11.226C11.9986 11.2742 12.2499 11.2495 12.4784 11.1549C12.7068 11.0602 12.902 10.9 13.0393 10.6945C13.1767 10.4889 13.25 10.2472 13.25 10C13.25 9.66848 13.1183 9.35054 12.8839 9.11612C12.6495 8.8817 12.3315 8.75 12 8.75Z" fill="#000000"></path> </g></svg>
+                        Map</a>
+                    </button>
                 </div>
             </div>
         </div>

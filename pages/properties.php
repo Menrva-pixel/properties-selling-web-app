@@ -38,5 +38,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
     <script src="../js/dataLoader.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
