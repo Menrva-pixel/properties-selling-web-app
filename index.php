@@ -186,12 +186,12 @@ session_start();
 
     <!----- List Perumahan ---->
     <section class="my-40">
-    <div class="container px-2 flex flex-col gap-8 md:flex-row-reverse items-center justify-center mx-auto md:px-0">
-        <div class="flex flex-col w-1/2">
+    <div class="container px-2 flex flex-col gap-8 xl:flex-row-reverse items-center justify-center mx-auto md:px-0">
+        <div class="flex flex-col xl:w-1/2 px-4">
             <h2 class="text-3xl md:text-6xl font-extrabold text-gray-700 text-center drop-shadow-md">DISCOVER YOURS</h2>
-            <p class="text-sm my-2 md:my-0 md:mb-16 tracking-wide text-center">dapatkan penawaran khusus sekarang juga dengan cara <a href="">mendaftar</a>, dan dapatkan diskon hingga 15% untuk pembelian pertama</p>
+            <p class="text-xs md:text-sm my-2 md:my-0 md:mb-16 tracking-wide text-center">dapatkan penawaran khusus sekarang juga dengan cara <a href="">mendaftar</a>, dan dapatkan diskon hingga 15% untuk pembelian pertama</p>
             <p class="text-xs md:text-lg tracking-wider space-y-5">Dengan bangga kami mempersembahkan koleksi properti eksklusif kami, di mana kemewahan bertemu dengan kenyamanan, dan desain yang inovatif memenuhi standar kehidupan modern. Setiap rumah adalah kisah hidup yang menanti untuk ditulis, dan kami berkomitmen untuk membantu Anda menemukan rumah yang tidak hanya memenuhi kebutuhan Anda, tetapi juga merangkul gaya hidup impian Anda. </p>
-            <a href="pages/properties.php" class="my-6 cursor-default p-4 w-3/12 border border-gray-700 duration-300 cursor-pointer inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-700 hover:text-gray-200 rounded-lg bg-primary-700 hover:bg-blue-600 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+            <a href="pages/properties.php" class="my-6 cursor-default p-4 xl:w-4/12 border border-gray-700 duration-300 cursor-pointer inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-700 hover:text-gray-200 rounded-lg bg-primary-700 hover:bg-blue-600 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
                     Explore more
                     <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
@@ -227,17 +227,14 @@ session_start();
         </div>
     </div>
 </section>
-<a href="pages/properties.php" class="block text-center text-blue-600 hover:underline mt-4 font-semibold">Lihat Lebih Banyak</a>
-
-
 
     <!-----Pricing---->
     <section class="py-12" id="pricing">
         <h2 class="text-3xl font-extrabold text-gray-800 text-center">Marketing Hub</h2>
         <div class="container mx-auto mt-8 p-4 md:p-0">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 rounded-sm">
                 <div
-                    class="p-4 bg-white border border-gray-400 text-center flex flex-col justify-between space-y-10">
+                    class="p-4 bg-white border border-gray-200 shadow-xl text-center flex flex-col justify-between space-y-10">
                     <h3 class="text-xl font-semibold flex flex-row items-center justify-center gap-2">
                         <svg width="18px" height="18px" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1"
                             xmlns="http://www.w3.org/2000/svg" fill="#000000">
@@ -281,7 +278,7 @@ session_start();
                         Sales</a>
                 </div>
                 <div
-                    class="p-4 bg-white border border-gray-400 text-center flex flex-col justify-between space-y-10">
+                    class="p-4 bg-white border border-gray-200 shadow-xl text-center flex flex-col justify-between space-y-10">
                     <h3 class="text-xl font-semibold flex flex-row items-center justify-center gap-2">
                         <svg fill="#000000" width="18px" height="18px" viewBox="-9.22 0 122.88 122.88" id="Layer_1"
                             data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
@@ -310,7 +307,7 @@ session_start();
                         Sales</a>
                 </div>
                 <div
-                    class="p-4 bg-white border border-gray-400 text-center flex flex-col justify-between space-y-10">
+                    class="p-4 bg-white border border-gray-200 shadow-xl text-center flex flex-col justify-between space-y-10">
                     <h3 class="text-xl font-semibold flex flex-row items-center justify-center gap-2">
                         <svg width="18px" height="18px" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -360,7 +357,7 @@ session_start();
           </div>
           <div class="sm:col-span-2">
               <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-              <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+              <textarea id="message" rows="6" class="resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
           </div>
           <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-primary-300">Send message</button>
       </form>
@@ -368,7 +365,7 @@ session_start();
 </section>
 
 
-<!-- ====== Footer Section Start -->
+<!--  Footer Section Start -->
 <footer>
 <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl ">
   <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
