@@ -24,16 +24,10 @@ if (isset($_POST['submit'])) {
         $_SESSION['log'] = "Logged";
         header("location: ../index.php");
     } else {
-        echo "
-        <script>
-        alert('Username atau Password Anda Salah');
-        document.location.href = 'login.php';
-        </script>
-        <meta http-equiv='refresh' content='0; url=login.php'>";
+        echo "<script>showErrorNotification();</script>";
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,6 +35,21 @@ if (isset($_POST['submit'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        function showErrorNotification() {
+            Swal.fire({
+                icon: 'error',
+                title: 'Login Gagal',
+                text: 'Email atau Password Anda Salah',
+                showConfirmButton: false,
+                timer: 2000
+            }).then(function () {
+                window.location.href = 'login.php';
+            });
+        }
+    </script>
 </head>
 <body class="bg-gray-200 h-screen flex items-center justify-center">
     <div class="bg-white p-8 rounded shadow-md max-w-xs">

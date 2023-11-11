@@ -4,7 +4,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 ?>
     <!--------------Navbar------------------------>
     <nav class="sticky top-0 left-0 px-4 py-4 flex justify-between items-center bg-white z-50">
-		<a class="text-3xl font-bold leading-none" href="index.php">
+		<a class="text-3xl font-bold leading-none" href="index">
 			<img src="../public/images/logo.png" alt="logo" class="w-20 h-auto">
 		</a>
 		<div class="lg:hidden">
@@ -16,7 +16,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 			</button>
 		</div>
 		<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-			<li><a class="text-sm text-gray-400 hover:text-blue-600 font-semibold hover:font-bold duration-300" href="../index.php">Home</a></li>
+			<li><a class="text-sm text-gray-400 hover:text-blue-600 font-semibold hover:font-bold duration-300" href="../index">Home</a></li>
 			<li class="text-gray-300">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
@@ -28,7 +28,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 				</svg>
 			</li>
-			<li><a class="text-sm text-gray-400 hover:text-blue-600 font-semibold hover:font-bold duration-300" href="../pages/pricing.php">Pricing</a></li>
+			<li><a class="text-sm text-gray-400 hover:text-blue-600 font-semibold hover:font-bold duration-300" href="../pages/pricing">Pricing</a></li>
 			<li class="text-gray-300">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
@@ -39,9 +39,9 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 		<?php
     if (isset($_SESSION['log'])) {
         echo '<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="#">' . $_SESSION['name'] . '</a>';
-        echo '<a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="auth/logout.php">Logout</a>';
+        echo '<a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="../auth/logout">Logout</a>';
     } else {
-        echo '<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="auth/login.php">Sign In</a>';
+        echo '<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="auth/login">Sign In</a>';
         echo '<a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="#">Sign up</a>';
     }
 ?>
@@ -68,7 +68,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">About Us</a>
 					</li>
 					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="../pages/pricing.php">Pricing</a>
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="../pages/pricing">Pricing</a>
 					</li>
 					<li class="mb-1">
 						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contact</a>
@@ -80,9 +80,9 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                 <?php
                 if (isset($_SESSION['log'])) {
                     echo '<a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">' . $_SESSION['name'] . '</a>';
-                    echo '<a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="auth/logout.php">Logout</a>';
+                    echo '<a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="auth/logout">Logout</a>';
                 } else {
-                    echo '<a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="auth/login.php">Sign in</a>';
+                    echo '<a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="auth/login">Sign in</a>';
                     echo '<a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="#">Sign Up</a>';
                 }
                 ?>

@@ -12,18 +12,21 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
     <title>Property Market</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
 
     <!--------------Navbar------------------------>
     <nav class="sticky top-0 left-0 px-4 py-4 flex justify-between items-center bg-white z-50">
-        <a class="text-3xl font-bold leading-none" href="index.php">
+        <a class="text-3xl font-bold leading-none" href="index">
             <img src="public/images/logo.png" alt="logo" class="w-20 h-auto">
         </a>
         <div class="lg:hidden">
@@ -44,7 +47,7 @@ session_start();
                         d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                 </svg>
             </li>
-            <li><a class="text-sm text-gray-400 hover:text-blue-600 font-semibold hover:font-bold duration-300" href="pages/about.php">About Us</a></li>
+            <li><a class="text-sm text-gray-400 hover:text-blue-600 font-semibold hover:font-bold duration-300" href="pages/about">About Us</a></li>
             <li class="text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
                     viewBox="0 0 24 24">
@@ -65,10 +68,10 @@ session_start();
         <?php
         if (isset($_SESSION['log'])) {
             echo '<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="#">' . $_SESSION['name'] . '</a>';
-            echo '<a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="auth/logout.php">Logout</a>';
+            echo '<a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="auth/logout">Logout</a>';
         } else {
-            echo '<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-300 text-sm text-gray-900 font-bold border border-gray-600/40 rounded-xl transition duration-200" href="auth/login.php">Sign In</a>';
-            echo '<a class="hidden lg:inline-block py-2 px-6 bg-blue-500/40 hover:bg-blue-600 text-sm text-gray-800 hover:text-white font-bold rounded-xl border border-blue-600/40 transition duration-200" href="auth/register.php">Sign up</a>';
+            echo '<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-300 text-sm text-gray-900 font-bold border border-gray-600/40 rounded-xl transition duration-200" href="auth/login">Sign In</a>';
+            echo '<a class="hidden lg:inline-block py-2 px-6 bg-blue-500/40 hover:bg-blue-600 text-sm text-gray-800 hover:text-white font-bold rounded-xl border border-blue-600/40 transition duration-200" href="auth/register">Sign up</a>';
         }
         ?>
     </nav>
@@ -96,7 +99,7 @@ session_start();
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                            href="pages/about.php">About Us</a>
+                            href="pages/about">About Us</a>
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
@@ -113,10 +116,10 @@ session_start();
                     <?php
                     if (isset($_SESSION['log'])) {
                         echo '<a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">' . $_SESSION['name'] . '</a>';
-                        echo '<a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="auth/logout.php">Logout</a>';
+                        echo '<a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="auth/logout">Logout</a>';
                     } else {
-                        echo '<a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="auth/login.php">Sign in</a>';
-                        echo '<a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="auth/register.php">Sign Up</a>';
+                        echo '<a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="auth/login">Sign in</a>';
+                        echo '<a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="auth/register">Sign Up</a>';
                     }
                     ?>
                 </div>
@@ -133,13 +136,13 @@ session_start();
     <section
         class="bg-[url('public/images/banner.jpg')] bg-no-repeat bg-sticky bg-gray-800/90 bg-blend-overlay py-52 z-10">
         <div class="py-8 px-4 mx-auto text-center lg:py-16 lg:px-12 h-auto">
-            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-8xl text-gray-200">
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-8xl text-gray-200" data-aos="fade-up" data-aos-duration="1000">
                 Kualitas Hidup Mulai dari Rumah</h1>
-            <p class="mb-8 text-sm font-semibold text-gray-200/60 lg:text-xl sm:px-16 xl:px-48">Kualitas hidup yang luar
+            <p class="mb-8 text-sm font-semibold text-gray-200/60 lg:text-xl sm:px-16 xl:px-48" data-aos="fade-up" data-aos-duration="2000">Kualitas hidup yang luar
                 biasa dimulai dari rumah yang Anda pilih. Di sinilah Anda akan menemukan kenyamanan, keamanan, dan cinta
                 yang mendalam.</p>
             <div class="flex flex-row mb-8 lg:mb-16 space-y-0 sm:flex-row justify-center items-center">
-                <a 
+                <a  data-aos="fade-right" data-aos-duration="2000"
                     class="cursor-default inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-300 rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
                     Mulai mencari
                     <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
@@ -161,23 +164,23 @@ session_start();
     <section class="my-10">
         <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
             <div class="font-light text-gray-200 sm:text-lg">
-                <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-gray-700 text-end drop-shadow-md">For a superior home and lifestyle, choose Sotheby's International Realty.</h2>
+                <h2 class="mb-4 text-3xl md:text-5xl tracking-tight font-extrabold text-gray-700 md:text-end drop-shadow-md" data-aos="fade-up" data-aos-duration="2000">For a superior home and lifestyle, choose Sotheby's International Realty.</h2>
                 <div class="flex flex-row">
                     <div class="my-4">
-                        <p class="mb-4 text-gray-600 md:text-base text-xs">Kami adalah mitra terpercaya Anda dalam mencari hunian yang sempurna. Dengan pengalaman
+                        <p class="mb-4 text-gray-700 md:text-base font-normal text-sm" data-aos="fade-up" data-aos-duration="3000">Kami adalah mitra terpercaya Anda dalam mencari hunian yang sempurna. Dengan pengalaman
                             dalam industri real estate, kami hadir untuk membantu Anda menemukan rumah impian Anda.</p>
-                        <p class="mb-4 text-gray-600 md:text-base text-xs">Kami menawarkan berbagai pilihan properti berkualitas tinggi dan layanan terbaik untuk memenuhi
+                        <p class="mb-4 text-gray-700 md:text-base font-normal text-sm" data-aos="fade-up" data-aos-duration="3000">Kami menawarkan berbagai pilihan properti berkualitas tinggi dan layanan terbaik untuk memenuhi
                             kebutuhan perumahan Anda. Temukan keindahan di setiap rumah yang kami tawarkan.</p>
                     </div>
                 </div>
 
 
             </div>
-            <div class="grid grid-cols-2 gap-4 mt-8">
-                <img class="w-full rounded-lg"
+            <div class="grid grid-cols-2 gap-4 mt-8 overflow-hidden">
+                <img class="w-full rounded-lg" data-aos="fade-right" data-aos-duration="2000"
                     src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="property 1">
-                <img class="mt-4 w-full lg:mt-10 rounded-lg"
+                <img class="mt-4 w-full lg:mt-10 rounded-lg" data-aos="fade-left" data-aos-duration="2000"
                     src="https://images.unsplash.com/photo-1620641622320-cca44cddd341?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fHByb3BlcnRpZXN8ZW58MHx8MHx8fDA%3D"
                     alt="property 2">
             </div>
@@ -185,13 +188,15 @@ session_start();
     </section>
 
     <!----- List Perumahan ---->
-    <section class="my-40">
-    <div class="container px-2 flex flex-col gap-8 xl:flex-row-reverse items-center justify-center mx-auto md:px-0">
+    <section class="lg:my-40 my-14">
+    <div class="container px-2 flex flex-col-reverse gap-8 xl:flex-row-reverse items-center justify-center mx-auto md:px-0">
         <div class="flex flex-col xl:w-1/2 px-4">
-            <h2 class="text-3xl md:text-6xl font-extrabold text-gray-700 text-center drop-shadow-md">DISCOVER YOURS</h2>
-            <p class="text-xs md:text-sm my-2 md:my-0 md:mb-16 tracking-wide text-center">dapatkan penawaran khusus sekarang juga dengan cara <a href="">mendaftar</a>, dan dapatkan diskon hingga 15% untuk pembelian pertama</p>
-            <p class="text-xs md:text-lg tracking-wider space-y-5">Dengan bangga kami mempersembahkan koleksi properti eksklusif kami, di mana kemewahan bertemu dengan kenyamanan, dan desain yang inovatif memenuhi standar kehidupan modern. Setiap rumah adalah kisah hidup yang menanti untuk ditulis, dan kami berkomitmen untuk membantu Anda menemukan rumah yang tidak hanya memenuhi kebutuhan Anda, tetapi juga merangkul gaya hidup impian Anda. </p>
-            <a href="pages/properties.php" class="my-6 cursor-default p-4 xl:w-4/12 border border-gray-700 duration-300 cursor-pointer inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-700 hover:text-gray-200 rounded-lg bg-primary-700 hover:bg-blue-600 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+            <h2 class="text-4xl md:text-6xl font-extrabold text-gray-700 drop-shadow-md" data-aos="fade-right" data-aos-duration="2000">DISCOVER YOURS</h2>
+            <p class="text-xs md:text-sm my-2 md:my-0 md:mb-16 tracking-wider" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000">dapatkan penawaran khusus sekarang juga dengan cara <a href="">mendaftar</a>, dan dapatkan diskon hingga 15% untuk pembelian pertama</p>
+            <p class="text-xs md:text-lg tracking-wider space-y-5" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000">Dengan bangga kami mempersembahkan koleksi properti eksklusif kami, di mana kemewahan bertemu dengan kenyamanan, dan desain yang inovatif memenuhi standar kehidupan modern. Setiap rumah adalah kisah hidup yang menanti untuk ditulis, dan kami berkomitmen untuk membantu Anda menemukan rumah yang tidak hanya memenuhi kebutuhan Anda, tetapi juga merangkul gaya hidup impian Anda. </p>
+            <a href="pages/properties" class="my-6 cursor-default p-4 xl:w-4/12 border border-gray-700 duration-300 cursor-pointer inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-700 hover:text-gray-200 rounded-lg bg-primary-700 hover:bg-blue-600 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
                     Explore more
                     <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
@@ -203,7 +208,8 @@ session_start();
         </div>
         
         <div class="grid grid-cols-1 gap-4" id="houses">
-            <div class="bg-white shadow-lg rounded relative">
+            <div class="bg-white shadow-lg rounded relative" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
                 <img src="public/images/house/house-1.jpg" class="w-full rounded">
                 <p class="absolute left-2 top-2 p-1 bg-gray-700/70 text-gray-200 text-sm flex items-center gap-1">
                     <svg class="invert" width="18px" height="18px" viewBox="0 0 24 24" fill="none"
@@ -274,7 +280,7 @@ session_start();
                             </a><a class="text-gray-600 font-semibold">hingga</a> <a
                                 class="font-semibold text-red-600 text-lg">20</a> tahun.</p>
                     </div>
-                    <a href="pages/pricing.php" class="p-4 bg-blue-600 text-white hover:bg-blue-700 w-full rounded-sm">Talk to
+                    <a href="pages/pricing" class="p-4 bg-blue-600 text-white hover:bg-blue-700 w-full rounded-sm">Talk to
                         Sales</a>
                 </div>
                 <div
@@ -303,7 +309,7 @@ session_start();
                             </a><a class="text-gray-600 font-semibold">hingga</a> <a
                                 class="font-semibold text-red-600 text-lg">20</a> tahun.</p>
                     </div>
-                    <a href="pages/pricing.php" class="p-4 bg-blue-600 text-white hover:bg-blue-700 w-full rounded-sm">Talk to
+                    <a href="pages/pricing" class="p-4 bg-blue-600 text-white hover:bg-blue-700 w-full rounded-sm">Talk to
                         Sales</a>
                 </div>
                 <div
@@ -330,7 +336,7 @@ session_start();
                         <p class="text-gray-800/70 text-xs">Harga dapat bervariasi tergantung tipe dan fasilitas</p>
                     </div>
 
-                    <a href="pages/pricing.php" class="p-4 bg-blue-600 text-white hover:bg-blue-700 w-full rounded-sm">Talk to
+                    <a href="pages/pricing" class="p-4 bg-blue-600 text-white hover:bg-blue-700 w-full rounded-sm">Talk to
                         Sales</a>
                 </div>
             </div>
@@ -344,7 +350,7 @@ session_start();
  <!-- contact Block -->
  <section class="bg-gray-700">
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white" data-aos="fade-up">Contact Us</h2>
       <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
       <form action="#" class="space-y-8">
           <div>
@@ -450,13 +456,13 @@ session_start();
 </footer>
 <!-- ====== Footer Section End -->
 
-
-
-
-
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
-    <script src="js/dataLoader.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

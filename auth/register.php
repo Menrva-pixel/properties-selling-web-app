@@ -17,23 +17,33 @@ if (isset($_POST['submit'])) {
 
     $tambahuser = mysqli_query($conn, "INSERT INTO login (namalengkap, email, password, notelp, alamat)
     VALUES ('$name', '$email', '$password', '$telp', '$alamat')");
+    
     if ($tambahuser) {
-        echo "
-        <script>
-            alert('Berhasil mendaftar');
-        </script>
-        <meta http-equiv='refresh' content='0; url=login.php'>
-        ";
+        echo "<script>
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Registrasi Berhasil',
+                    text: 'Selamat datang, $name!',
+                    showConfirmButton: false,
+                    timer: 2000
+                }).then(function () {
+                    window.location.href = 'login.php';
+                });
+            </script>";
     } else {
-        echo "
-        <script>
-            alert('Gagal Mendaftar');
-        </script>
-        <meta http-equiv='refresh' content='0; url=register.php'>
-        ";
+        echo "<script>
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Gagal Mendaftar',
+                    text: 'Terjadi kesalahan, silakan coba lagi!',
+                    showConfirmButton: false,
+                    timer: 2000
+                }).then(function () {
+                    window.location.href = 'register.php';
+                });
+            </script>";
     }
 }
-;
 ?>
 
 <!DOCTYPE html>
@@ -42,6 +52,7 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-200 h-screen flex items-center justify-center">
@@ -74,5 +85,7 @@ if (isset($_POST['submit'])) {
             <p>Sudah punya akun? <a href="login.php" class="text-blue-500">Login disini</a></p>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 </html>
