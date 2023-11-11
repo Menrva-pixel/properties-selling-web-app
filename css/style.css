@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -9,7 +11,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: rgb(250, 249, 249);
     color: #333;
     line-height: 1.6;
@@ -29,6 +31,7 @@ body {
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s, visibility 0.3s;
+        z-index: 9999;
     }
 
     #back-to-top.show {
@@ -49,3 +52,41 @@ body {
         font-size: 24px;
         margin: 0;
     }
+
+
+    /*scrollbar di Firefox */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #3498db; /* Warna biru */
+    border-radius: 6px;
+}
+
+/* scrollbar di Chrome, Safari, dan Edge */
+::-webkit-scrollbar-track {
+    background-color: #ecf0f1; /* Warna abu-abu */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #3498db; /* Warna biru */
+}
+
+.vertical-line {
+    border-left: 1px solid #000; /* Ganti warna dan ketebalan sesuai keinginan */
+    height: 100px; /* Atur tinggi garis vertikal */
+    margin-right: 20px; /* Sesuaikan margin kanan agar terlihat jelas */
+}
+
+
+.outline-title {
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 2px black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }

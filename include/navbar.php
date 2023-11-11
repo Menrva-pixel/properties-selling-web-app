@@ -1,9 +1,9 @@
 <?php
 session_start();
-
+$currentPage = basename($_SERVER['PHP_SELF']);
 ?>
     <!--------------Navbar------------------------>
-    <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
+    <nav class="sticky top-0 left-0 px-4 py-4 flex justify-between items-center bg-white z-50">
 		<a class="text-3xl font-bold leading-none" href="index.php">
 			<img src="../public/images/logo.png" alt="logo" class="w-20 h-auto">
 		</a>
@@ -16,25 +16,25 @@ session_start();
 			</button>
 		</div>
 		<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="../index.php">Home</a></li>
+			<li><a class="text-sm text-gray-400 hover:text-blue-600 font-semibold hover:font-bold duration-300" href="../index.php">Home</a></li>
 			<li class="text-gray-300">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 				</svg>
 			</li>
-			<li><a class="text-sm text-blue-600 font-bold" href="#">About Us</a></li>
+			<li><a class="text-sm text-gray-400 hover:text-blue-600 font-semibold hover:font-bold duration-300" href="#">About Us</a></li>
 			<li class="text-gray-300">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 				</svg>
 			</li>
-			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="../pages/pricing.php">Pricing</a></li>
+			<li><a class="text-sm text-gray-400 hover:text-blue-600 font-semibold hover:font-bold duration-300" href="../pages/pricing.php">Pricing</a></li>
 			<li class="text-gray-300">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 				</svg>
 			</li>
-			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Contact</a></li>
+			<li><a class="text-sm text-gray-400 hover:text-blue-600 font-semibold hover:font-bold duration-300" href="#">Contact</a></li>
 		</ul>
 		<?php
     if (isset($_SESSION['log'])) {
