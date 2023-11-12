@@ -1,4 +1,3 @@
-<!-- ====== Footer Section Start -->
 <footer>
 <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl ">
   <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -8,10 +7,10 @@
       </a>
       <div class="mt-6 lg:max-w-sm">
         <p class="text-sm text-gray-800">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+        Kami adalah perusahaan properti yang berfokus pada menyediakan hunian berkualitas untuk semua. Dengan pengalaman lebih dari 10 tahun, kami telah berhasil membantu ribuan pelanggan menemukan rumah impian mereka. 
         </p>
         <p class="mt-4 text-sm text-gray-800">
-          Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        Kami berkomitmen untuk memberikan pelayanan terbaik, dan kami selalu berusaha untuk mengembangkan properti yang ramah lingkungan dan berkelanjutan.
         </p>
       </div>
     </div>
@@ -19,16 +18,16 @@
       <p class="text-base font-bold tracking-wide text-gray-900">Contacts</p>
       <div class="flex">
         <p class="mr-1 text-gray-800">Phone:</p>
-        <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">850-123-5021</a>
+        <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">+62-850-123-5021</a>
       </div>
       <div class="flex">
         <p class="mr-1 text-gray-800">Email:</p>
-        <a href="mailto:info@lorem.mail" aria-label="Our email" title="Our email" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">info@lorem.mail</a>
+        <a href="mailto:info@lorem.mail" aria-label="Our email" title="Our email" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">DDwelling@outlook.com</a>
       </div>
       <div class="flex">
         <p class="mr-1 text-gray-800">Address:</p>
         <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Our address" title="Our address" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-          312 Lovely Street, NY
+            Jl Anggrek 1, ID
         </a>
       </div>
     </div>
@@ -59,13 +58,13 @@
         </a>
       </div>
       <p class="mt-4 text-sm text-gray-500">
-        Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.
+        Tetap terhubung dengan update terbaru di sosial media kami.
       </p>
     </div>
   </div>
   <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row ">
     <p class="text-sm text-gray-600">
-      © Copyright 2020 Dream Dwelling. All rights reserved.
+      © Copyright 2023 Dream Dwelling. All rights reserved.
     </p>
     <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
       <li>
@@ -81,4 +80,3 @@
   </div>
 </div>
 </footer>
-<!-- ====== Footer Section End -->

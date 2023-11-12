@@ -236,8 +236,9 @@ session_start();
 
     <!-----Pricing---->
     <section class="py-12" id="pricing">
-        <h2 class="text-3xl font-extrabold text-gray-800 text-center">Marketing Hub</h2>
-        <div class="container mx-auto mt-8 p-4 md:p-0">
+    <h2 class="mb-4 text-3xl md:text-5xl tracking-tight font-extrabold text-gray-700 text-center drop-shadow-md" data-aos="fade-right" data-aos-duration="1000">Marketing Hub</h2>
+    <p data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" class="text-center">dapatkan penawaran khusus sekarang juga dengan cara <a href="">mendaftar</a>, dan dapatkan diskon hingga 15% untuk pembelian pertama</p>
+    <div class="container mx-auto mt-8 p-4 md:p-0">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 rounded-sm">
                 <div
                     class="p-4 bg-white border border-gray-200 shadow-xl text-center flex flex-col justify-between space-y-10">
@@ -271,7 +272,7 @@ session_start();
                     <div>
                         <p class="text-gray-700 text-xs">Mulai dari</p>
                         <p class="text-gray-600/90 text-2xl my-2 font-bold">Rp <a
-                                class="text-4xl font-semibold">400</a>jt
+                                class="text-4xl font-bold">400</a>jt
                         </p>
                         <p class="text-gray-800/70 text-xs mb-6">*Jakarta Pusat</p>
                         <p class="text-gray-800/70 text-xs">Discount <a
@@ -301,7 +302,7 @@ session_start();
                     <div>
                         <p class="text-gray-700 text-xs">Mulai dari</p>
                         <p class="text-gray-600/90 text-2xl my-2 font-bold">Rp <a
-                                class="text-4xl font-semibold">500</a>jt</p>
+                                class="text-4xl font-bold">500</a>jt</p>
                         <p class="text-gray-800/70 text-xs mb-6">*D.K.I. Jakarta</p>
                         <p class="text-gray-800/70 text-xs">Discount <a
                                 class="text-lg font-semibold text-red-600">10%</a> untuk pembelian sekarang.</p>
@@ -329,7 +330,7 @@ session_start();
                     <div>
                         <p class="text-gray-700 text-xs">Mulai dari</p>
                         <p class="text-gray-600/90 text-2xl my-2 font-bold">Rp <span
-                                class="text-4xl font-semibold">24</span>jt</p>
+                                class="text-4xl font-bold">24</span>jt</p>
                         <p class="text-gray-800/70 text-xs">*Per m²</p> 
                         <p class="mb-6 text-xs">untuk D.K.I. Jakarta</p>
                         <p class="text-gray-800/70 text-xs">Harga dapat bervariasi tergantung wilayah</p>
@@ -351,7 +352,7 @@ session_start();
  <section class="bg-gray-700">
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
       <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white" data-aos="fade-up">Contact Us</h2>
-      <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+      <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Memiliki pertanyaan seputar property? hubungi kami sekarang juga untuk konsultasi!</p>
       <form action="#" class="space-y-8">
           <div>
               <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
@@ -381,10 +382,10 @@ session_start();
       </a>
       <div class="mt-6 lg:max-w-sm">
         <p class="text-sm text-gray-800">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+        Kami adalah perusahaan properti yang berfokus pada menyediakan hunian berkualitas untuk semua. Dengan pengalaman lebih dari 10 tahun, kami telah berhasil membantu ribuan pelanggan menemukan rumah impian mereka. 
         </p>
         <p class="mt-4 text-sm text-gray-800">
-          Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        Kami berkomitmen untuk memberikan pelayanan terbaik, dan kami selalu berusaha untuk mengembangkan properti yang ramah lingkungan dan berkelanjutan.
         </p>
       </div>
     </div>
@@ -392,16 +393,16 @@ session_start();
       <p class="text-base font-bold tracking-wide text-gray-900">Contacts</p>
       <div class="flex">
         <p class="mr-1 text-gray-800">Phone:</p>
-        <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">850-123-5021</a>
+        <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">+62-850-123-5021</a>
       </div>
       <div class="flex">
         <p class="mr-1 text-gray-800">Email:</p>
-        <a href="mailto:info@lorem.mail" aria-label="Our email" title="Our email" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">info@lorem.mail</a>
+        <a href="mailto:info@lorem.mail" aria-label="Our email" title="Our email" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">DDwelling@outlook.com</a>
       </div>
       <div class="flex">
         <p class="mr-1 text-gray-800">Address:</p>
         <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Our address" title="Our address" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-          312 Lovely Street, NY
+            Jl Anggrek 1, ID
         </a>
       </div>
     </div>
@@ -432,13 +433,13 @@ session_start();
         </a>
       </div>
       <p class="mt-4 text-sm text-gray-500">
-        Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.
+        Tetap terhubung dengan update terbaru di sosial media kami.
       </p>
     </div>
   </div>
   <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row ">
     <p class="text-sm text-gray-600">
-      © Copyright 2020 Dream Dwelling. All rights reserved.
+      © Copyright 2023 Dream Dwelling. All rights reserved.
     </p>
     <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
       <li>
